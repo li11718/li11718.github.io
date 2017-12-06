@@ -1,0 +1,1830 @@
+
+<!DOCTYPE html>
+<html>
+
+<head><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108230466-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108230466-1');
+</script>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Tarefa 2</title>
+</head>
+
+<body>
+
+<p>Output:
+[3 of 4] Compiling Tarefa2_2017li1g78 ( Tarefa2_2017li1g78.hs, Tarefa2_2017li1g78.o )
+[4 of 4] Compiling Main             ( RunT2.hs, RunT2.o )
+Linking RunT2 ...
+
+Errors:
+
+Exit Code: 0</p>
+    
+<div id="demo">
+
+<div id="tablediv" class="table-responsive-vertical shadow-z-1">
+<table id="table" class="table table-hover table-mc-light-blue">
+    <thead>
+        <tr>
+            
+                <th>Tabuleiro</th>
+            
+                <th>Posicao</th>
+            
+                <th>Orientação</th>
+            
+            <th>Resultado</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/78/t2/1/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Norte) (-1),Peca Recta (-1),
+  Peca Recta (-1),Peca Recta (-1),Peca Recta (-1),
+  Peca (Curva Este) (-1),Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Recta (-1),Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Recta (-1),Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Rampa Sul) (-1),Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Recta (-1),Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Rampa Norte) (-1),Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Recta (-1),Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Norte) (-1),Peca Recta (-1),
+  Peca Recta (-1),Peca Recta (-1),
+  Peca (Rampa Este) (-1),Peca (Rampa Oeste) (-1),
+  Peca Recta (-1),Peca Recta (-1),
+  Peca (Curva Sul) (-1),Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Recta (-1),Peca Lava 0,Peca Lava 0,
+  Peca Recta (-1),Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Rampa Norte) (-2),Peca Lava 0,
+  Peca Lava 0,Peca Recta (-1),Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Recta (-2),Peca Lava 0,Peca Lava 0,
+  Peca Recta (-1),Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Recta (-2),Peca Lava 0,Peca Lava 0,
+  Peca (Curva Oeste) (-1),Peca (Rampa Este) (-1),
+  Peca (Rampa Oeste) (-1),Peca Recta (-1),
+  Peca Recta (-1),Peca (Curva Este) (-1),Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Oeste) (-2),
+  Peca (Curva Este) (-2),Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Recta (-1),Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca (Curva Oeste) (-2),
+  Peca (Curva Este) (-2),Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta (-1),
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Oeste) (-2),Peca (Curva Este) (-2),
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Recta (-1),Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Oeste) (-2),Peca Recta (-2),
+  Peca Recta (-2),Peca (Rampa Este) (-2),
+  Peca Recta (-1),Peca Recta (-1),Peca Recta (-1),
+  Peca Recta (-1),Peca Recta (-1),Peca Recta (-1),
+  Peca Recta (-1),Peca (Rampa Este) (-1),Peca Recta 0,
+  Peca (Curva Este) 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca (Rampa Sul) (-1),Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Recta 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Recta 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Recta 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Norte) (-2),Peca Recta (-2),
+  Peca Recta (-2),Peca (Rampa Este) (-2),
+  Peca (Rampa Este) (-1),Peca Recta 0,Peca Recta 0,
+  Peca Recta 0,Peca (Curva Sul) 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Recta 0,Peca Lava 0],
+ [Peca Lava 0,Peca Recta (-2),Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Recta 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Oeste) (-2),Peca Recta (-2),
+  Peca (Rampa Oeste) (-3),Peca Recta (-3),
+  Peca (Rampa Este) (-3),Peca Recta (-2),
+  Peca Recta (-2),Peca (Rampa Este) (-2),
+  Peca Recta (-1),Peca (Rampa Este) (-1),Peca Recta 0,
+  Peca Recta 0,Peca Recta 0,Peca Recta 0,Peca Recta 0,
+  Peca Recta 0,Peca (Curva Sul) 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 5 tests): 
+Equality assertion failed: expected...
+True
+...but got...
+False
+(17,15)
+Norte</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/78/t2/2/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Norte) (-1),Peca Recta (-1),
+  Peca (Rampa Oeste) (-2),Peca Recta (-2),
+  Peca Recta (-2),Peca Recta (-2),
+  Peca (Curva Este) (-2),Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca (Curva Norte) (-2),
+  Peca (Curva Este) (-2),Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Recta (-1),Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Recta (-2),Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Recta (-2),
+  Peca Recta (-2),Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Norte) (-1),Peca Recta (-1),
+  Peca Recta (-1),Peca (Curva Sul) (-1),Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Rampa Norte) (-3),Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Recta (-2),Peca Recta (-2),
+  Peca Lava 0],
+ [Peca Lava 0,Peca Recta (-1),Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Recta (-3),Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Recta (-2),
+  Peca Recta (-2),Peca Lava 0],
+ [Peca Lava 0,Peca (Rampa Sul) (-1),Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Oeste) (-3),Peca Recta (-3),
+  Peca (Rampa Este) (-3),Peca Recta (-2),
+  Peca (Curva Sul) (-2),Peca (Rampa Sul) (-2),
+  Peca Lava 0],
+ [Peca Lava 0,Peca Recta 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta (-1),
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Oeste) 0,Peca Recta 0,
+  Peca Recta 0,Peca Recta 0,Peca (Curva Este) 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Recta (-1),Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Recta 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca (Curva Norte) (-1),
+  Peca (Curva Sul) (-1),Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca (Curva Oeste) 0,Peca Recta 0,
+  Peca (Rampa Este) 0,Peca Recta 1,Peca Recta 1,
+  Peca (Rampa Oeste) 0,Peca (Rampa Oeste) (-1),
+  Peca Recta (-1),Peca Recta (-1),
+  Peca (Curva Sul) (-1),Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+RunT2: Tarefa2_2017li1g78.hs:(392,1)-(489,66): Non-exhaustive patterns in function checkAltComp
+
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 5 tests)
+*** Failed! (after 5 tests): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  RunT2: Tarefa2_2017li1g78.hs:(392,1)-(489,66): Non-exhaustive patterns in function checkAltComp
+  
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(1,5)
+Sul</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/78/t2/3/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Norte) 1,Peca (Rampa Este) 1,
+  Peca Recta 2,Peca Recta 2,Peca (Curva Este) 2,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta 2,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta 2,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,
+  Peca Lava 0,Peca (Curva Norte) 2,Peca Recta 2,
+  Peca (Curva Sul) 2,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Rampa Norte) 0,Peca Lava 0,Peca Recta 2,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta 0,
+  Peca Lava 0,Peca Recta 2,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta 0,
+  Peca Lava 0,Peca (Rampa Norte) 1,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta 0,
+  Peca Lava 0,Peca Recta 1,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,
+  Peca (Curva Sul) 0,Peca Lava 0,Peca Recta 1,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Recta 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Recta 1,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Oeste) 0,
+  Peca (Rampa Este) 0,Peca Recta 1,Peca Recta 1,
+  Peca (Curva Sul) 1,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+RunT2: Tarefa2_2017li1g78.hs:(392,1)-(489,66): Non-exhaustive patterns in function checkAltComp
+
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 11 tests)
+*** Failed! (after 11 tests): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  RunT2: Tarefa2_2017li1g78.hs:(392,1)-(489,66): Non-exhaustive patterns in function checkAltComp
+  
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(7,1)
+Sul</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/78/t2/4/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Norte) 1,Peca Recta 1,
+  Peca Recta 0,Peca Recta 0,Peca Recta 0,
+  Peca (Rampa Este) 0,Peca Recta 1,Peca Recta 1,
+  Peca Recta 1,Peca (Curva Este) 1,Peca Lava 0],
+ [Peca Lava 0,Peca Recta 1,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca (Rampa Sul) 1,
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,
+  Peca Recta 1,Peca Recta 1,Peca (Rampa Este) 1,
+  Peca Recta 2,Peca Recta 2,Peca Recta 2,Peca Recta 2,
+  Peca (Curva Sul) 2,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+RunT2: Tarefa2_2017li1g78.hs:(392,1)-(489,66): Non-exhaustive patterns in function checkAltComp
+
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 3 tests)
+*** Failed! (after 3 tests): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  RunT2: Tarefa2_2017li1g78.hs:(392,1)-(489,66): Non-exhaustive patterns in function checkAltComp
+  
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(10,1)
+Sul</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/78/t2/5/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca (Curva Norte) 0,Peca Recta 0,Peca Recta 0,
+  Peca Recta 0,Peca Recta 0,Peca Recta 0,
+  Peca (Rampa Este) 0,Peca Recta 1,Peca (Rampa Este) 1,
+  Peca Recta 2,Peca Recta 2,Peca (Curva Este) 2,
+  Peca Lava 0],
+ [Peca Recta 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta 2,
+  Peca Lava 0],
+ [Peca Recta 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Rampa Norte) 1,Peca Lava 0],
+ [Peca Recta 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca (Curva Norte) 1,
+  Peca (Curva Sul) 1,Peca Lava 0],
+ [Peca Recta 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca (Curva Norte) 1,
+  Peca Recta 1,Peca Recta 1,Peca Recta 1,
+  Peca (Curva Sul) 1,Peca Lava 0,Peca Lava 0],
+ [Peca Recta 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca (Curva Oeste) 0,Peca Recta 0,
+  Peca (Rampa Este) 0,Peca Recta 1,Peca Recta 1,
+  Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-success" data-title="Resultado">OK</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/78/t2/6/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,
+  Peca (Curva Este) 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,
+  Peca Recta 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Recta 1,Peca Lava 0,Peca Recta 0,
+  Peca Recta 0,Peca Recta 0,Peca (Rampa Este) 0,
+  Peca Recta 1,Peca Recta 1,Peca Recta 1,
+  Peca (Curva Este) 1,Peca Lava 0],
+ [Peca Lava 0,Peca Recta 1,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca (Rampa Sul) 1,
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,
+  Peca Recta 1,Peca Recta 1,Peca (Rampa Este) 1,
+  Peca Recta 2,Peca Recta 2,Peca Recta 2,Peca Recta 2,
+  Peca (Curva Sul) 2,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+RunT2: Tarefa2_2017li1g78.hs:(392,1)-(489,66): Non-exhaustive patterns in function checkAltComp
+
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 51 tests)
+*** Failed! (after 51 tests): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  RunT2: Tarefa2_2017li1g78.hs:(392,1)-(489,66): Non-exhaustive patterns in function checkAltComp
+  
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(1,5)
+Norte</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/78/t2/7/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Norte) 1,Peca (Rampa Este) 1,
+  Peca Recta 2,Peca Recta 2,Peca (Curva Este) 2,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta 2,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Recta 0,Peca Lava 0,Peca Recta 1,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta 2,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,
+  Peca Lava 0,Peca (Curva Norte) 2,Peca Recta 2,
+  Peca (Curva Sul) 2,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Rampa Norte) 0,Peca Lava 0,Peca Recta 2,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta 0,
+  Peca Lava 0,Peca Recta 2,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta 0,
+  Peca Lava 0,Peca (Rampa Norte) 1,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta 0,
+  Peca Lava 0,Peca Recta 1,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,
+  Peca (Curva Sul) 0,Peca Lava 0,Peca Recta 1,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Recta 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Recta 1,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Oeste) 0,
+  Peca (Rampa Este) 0,Peca Recta 1,Peca Recta 1,
+  Peca (Curva Sul) 1,Peca Lava 0,Peca (Rampa Norte) 2,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-success" data-title="Resultado">OK</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/78/t2/8/run.html">[[Peca Lava 2,Peca Lava 2,Peca Lava 2,Peca Lava 2],
+ [Peca Lava 2,Peca (Curva Norte) 2,
+  Peca (Curva Este) 2,Peca Lava 2],
+ [Peca Lava 2,Peca (Curva Oeste) 2,Peca (Curva Sul) 2,
+  Peca Lava 2],
+ [Peca Lava 2,Peca Lava 2,Peca Lava 2,Peca Lava 2]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-success" data-title="Resultado">OK</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/78/t2/9/run.html">[[Peca (Curva Norte) 5,Peca (Curva Este) 5],
+ [Peca (Curva Oeste) 5,Peca (Curva Sul) 5]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-success" data-title="Resultado">OK</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/78/t2/10/run.html">[[Peca (Curva Norte) 2,Peca Recta 2,
+  Peca (Curva Este) 2],
+ [Peca Recta 2,Peca Lava 2,Peca Recta 2],
+ [Peca (Curva Oeste) 2,Peca Recta 2,
+  Peca (Curva Sul) 2]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-success" data-title="Resultado">OK</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/78/t2/11/run.html">[[Peca (Curva Norte) 2,Peca (Curva Este) 2],
+ [Peca (Curva Oeste) 2,Peca (Curva Sul) 2]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-success" data-title="Resultado">OK</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/78/t2/12/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-success" data-title="Resultado">OK</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/78/t2/13/run.html">[[Peca (Curva Norte) 2,Peca Recta 2,
+  Peca (Curva Este) 2],
+ [Peca Recta 2,Peca Recta 2,Peca Recta 2],
+ [Peca (Curva Oeste) 2,Peca Recta 2,
+  Peca (Curva Sul) 2]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-success" data-title="Resultado">OK</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/78/t2/14/run.html">[[Peca (Curva Norte) 2,Peca Recta 2,
+  Peca (Curva Este) 2],
+ [Peca Recta 2,Peca Lava 0,Peca Recta 2],
+ [Peca (Curva Oeste) 2,Peca Recta 2,
+  Peca (Curva Sul) 2]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-success" data-title="Resultado">OK</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/78/t2/15/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,
+  Peca (Curva Este) 0,Peca Lava 0],
+ [Peca Lava 0,Peca Recta 0,Peca Lava 0,Peca Recta 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Oeste) 0,Peca Recta 0,
+  Peca (Curva Sul) 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+RunT2: Tarefa2_2017li1g78.hs:(392,1)-(489,66): Non-exhaustive patterns in function checkAltComp
+
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 10 tests)
+*** Failed! (after 10 tests): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  RunT2: Tarefa2_2017li1g78.hs:(392,1)-(489,66): Non-exhaustive patterns in function checkAltComp
+  
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(1,1)
+Norte</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/78/t2/16/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Norte) 0,
+  Peca (Curva Este) 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Oeste) 0,Peca (Curva Sul) 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+RunT2: Tarefa2_2017li1g78.hs:(392,1)-(489,66): Non-exhaustive patterns in function checkAltComp
+
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 17 tests)
+*** Failed! (after 17 tests): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  RunT2: Tarefa2_2017li1g78.hs:(392,1)-(489,66): Non-exhaustive patterns in function checkAltComp
+  
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(1,1)
+Norte</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/78/t2/17/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,
+  Peca (Curva Este) 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Recta 0,Peca Lava 0,Peca Recta 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Oeste) 0,Peca Recta 0,
+  Peca Recta 0,Peca Recta 0,Peca (Curva Este) 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta 0,
+  Peca Lava 0,Peca Recta 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Oeste) 0,Peca Recta 0,Peca (Curva Sul) 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+RunT2: Tarefa2_2017li1g78.hs:(392,1)-(489,66): Non-exhaustive patterns in function checkAltComp
+
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 5 tests)
+*** Failed! (after 5 tests): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  RunT2: Tarefa2_2017li1g78.hs:(392,1)-(489,66): Non-exhaustive patterns in function checkAltComp
+  
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(1,3)
+Oeste</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/78/t2/18/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Norte) 0,Peca Recta 0,
+  Peca (Curva Este) 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Recta 0,Peca Lava 0,Peca (Rampa Norte) (-1),
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,
+  Peca Recta 0,Peca (Curva Sul) 0,Peca Lava 0,
+  Peca Recta (-1),Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Recta 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca (Curva Oeste) (-1),
+  Peca (Curva Este) (-1),Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Recta 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Oeste) (-1),Peca (Curva Este) (-1),
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Rampa Norte) (-1),Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Norte) (-1),Peca (Curva Sul) (-1),
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Rampa Norte) (-2),Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Norte) (-1),Peca (Curva Sul) (-1),
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Oeste) (-2),Peca Recta (-2),
+  Peca (Curva Este) (-2),Peca Lava 0,Peca Lava 0,
+  Peca (Curva Oeste) (-1),Peca Recta (-1),
+  Peca Recta (-1),Peca (Rampa Oeste) (-2),
+  Peca (Curva Este) (-2),Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Oeste) (-2),Peca (Curva Este) (-2),
+  Peca Lava 0,Peca (Curva Norte) (-3),
+  Peca (Rampa Este) (-3),Peca Recta (-2),
+  Peca Recta (-2),Peca (Curva Sul) (-2),Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Oeste) (-2),Peca (Rampa Oeste) (-3),
+  Peca (Curva Sul) (-3),Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+RunT2: Tarefa2_2017li1g78.hs:(392,1)-(489,66): Non-exhaustive patterns in function checkAltComp
+
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 1 test)
+*** Failed! (after 1 test): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  RunT2: Tarefa2_2017li1g78.hs:(392,1)-(489,66): Non-exhaustive patterns in function checkAltComp
+  
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(6,8)
+Norte</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/78/t2/19/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Norte) 1,Peca (Curva Este) 1,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Rampa Norte) 0,Peca (Rampa Norte) 0,
+  Peca Lava 0,Peca (Curva Norte) 1,Peca (Curva Este) 1,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,
+  Peca Recta 0,Peca Recta 0,Peca (Curva Sul) 0,
+  Peca Lava 0,Peca (Rampa Norte) 0,
+  Peca (Rampa Norte) 0,Peca Lava 0,
+  Peca (Curva Norte) 1,Peca (Curva Este) 1,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Recta 0,Peca (Curva Norte) (-1),
+  Peca (Rampa Este) (-1),Peca Recta 0,Peca Recta 0,
+  Peca Recta 0,Peca Recta 0,Peca (Curva Sul) 0,
+  Peca Lava 0,Peca (Rampa Norte) 0,
+  Peca (Rampa Norte) 0,Peca Lava 0,
+  Peca (Curva Norte) 1,Peca (Curva Este) 1,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Recta 0,Peca (Curva Oeste) (-1),
+  Peca (Rampa Este) (-1),Peca (Curva Sul) 0,
+  Peca (Curva Norte) (-1),Peca (Rampa Este) (-1),
+  Peca Recta 0,Peca Recta 0,Peca Recta 0,Peca Recta 0,
+  Peca (Curva Sul) 0,Peca Lava 0,Peca (Rampa Norte) 0,
+  Peca (Rampa Norte) 0,Peca Lava 0,
+  Peca (Curva Norte) 1,Peca (Curva Este) 1,
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Oeste) 0,Peca Recta 0,
+  Peca Recta 0,Peca (Curva Este) 0,
+  Peca (Curva Oeste) (-1),Peca (Rampa Este) (-1),
+  Peca (Curva Sul) 0,Peca (Curva Norte) (-1),
+  Peca (Rampa Este) (-1),Peca Recta 0,Peca Recta 0,
+  Peca Recta 0,Peca Recta 0,Peca (Curva Sul) 0,
+  Peca Lava 0,Peca (Rampa Norte) 0,
+  Peca (Rampa Norte) 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Oeste) 0,Peca Recta 0,Peca Recta 0,
+  Peca (Curva Este) 0,Peca (Curva Oeste) (-1),
+  Peca (Rampa Este) (-1),Peca (Curva Sul) 0,
+  Peca (Curva Norte) (-1),Peca (Rampa Este) (-1),
+  Peca Recta 0,Peca Recta 0,Peca Recta 0,Peca Recta 0,
+  Peca (Curva Sul) 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Oeste) 0,Peca Recta 0,Peca Recta 0,
+  Peca (Curva Este) 0,Peca (Curva Oeste) (-1),
+  Peca (Rampa Este) (-1),Peca (Curva Sul) 0,
+  Peca (Curva Norte) (-1),Peca (Rampa Este) (-1),
+  Peca Recta 0,Peca (Curva Este) 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca (Curva Oeste) 0,
+  Peca Recta 0,Peca Recta 0,Peca (Curva Este) 0,
+  Peca (Curva Oeste) (-1),Peca (Rampa Este) (-1),
+  Peca (Curva Sul) 0,Peca Recta 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca (Curva Oeste) 0,Peca Recta 0,
+  Peca Recta 0,Peca Recta 0,Peca (Curva Sul) 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 2 tests): 
+Equality assertion failed: expected...
+True
+...but got...
+False
+(8,5)
+Este</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/78/t2/20/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Rampa Este) 0,Peca (Rampa Este) 1,
+  Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-success" data-title="Resultado">OK</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/78/t2/21/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Rampa Oeste) (-1),
+  Peca (Rampa Oeste) (-2),Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-success" data-title="Resultado">OK</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/78/t2/22/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca (Curva Este) 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca (Curva Sul) 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+RunT2: Tarefa2_2017li1g78.hs:(392,1)-(489,66): Non-exhaustive patterns in function checkAltComp
+
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 39 tests)
+*** Failed! (after 39 tests): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  RunT2: Tarefa2_2017li1g78.hs:(392,1)-(489,66): Non-exhaustive patterns in function checkAltComp
+  
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(2,1)
+Sul</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/78/t2/23/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca (Curva Este) 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca (Curva Sul) 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+RunT2: Tarefa2_2017li1g78.hs:(392,1)-(489,66): Non-exhaustive patterns in function checkAltComp
+
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 38 tests)
+*** Failed! (after 38 tests): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  RunT2: Tarefa2_2017li1g78.hs:(392,1)-(489,66): Non-exhaustive patterns in function checkAltComp
+  
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(2,1)
+Sul</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/78/t2/24/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Recta 0,Peca Recta 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-success" data-title="Resultado">OK</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/78/t2/25/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Norte) (-3),Peca (Rampa Oeste) (-4),
+  Peca (Rampa Norte) (-3),Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta (-3),
+  Peca (Curva Norte) (-3),Peca (Curva Sul) (-3),
+  Peca (Curva Este) (-3),Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Oeste) (-3),Peca (Curva Sul) (-3),
+  Peca (Curva Oeste) (-3),Peca (Curva Sul) (-3),
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Rampa Oeste) (-1),
+  Peca (Rampa Oeste) (-2),Peca (Rampa Oeste) (-3),
+  Peca (Rampa Oeste) (-4),Peca (Curva Sul) (-4),
+  Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+RunT2: Tarefa2_2017li1g78.hs:(392,1)-(489,66): Non-exhaustive patterns in function checkAltComp
+
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 18 tests)
+*** Failed! (after 18 tests): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  RunT2: Tarefa2_2017li1g78.hs:(392,1)-(489,66): Non-exhaustive patterns in function checkAltComp
+  
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(6,3)
+Sul</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/78/t2/26/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Recta 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Norte) 1,Peca (Curva Este) 1,
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Oeste) 0,
+  Peca (Curva Este) 0,Peca Lava 0,Peca (Rampa Norte) 0,
+  Peca Recta 1,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca (Rampa Norte) (-1),
+  Peca (Curva Norte) 0,Peca (Curva Sul) 0,
+  Peca (Rampa Norte) 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca (Rampa Sul) (-1),
+  Peca Recta 0,Peca Lava 0,Peca (Rampa Sul) 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca (Curva Oeste) 0,
+  Peca (Curva Sul) 0,Peca Lava 0,Peca (Rampa Norte) 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Norte) 0,Peca (Curva Sul) 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Sul) 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-success" data-title="Resultado">OK</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/78/t2/27/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Norte) 1,Peca (Rampa Este) 1,
+  Peca (Rampa Oeste) 1,Peca (Curva Este) 1,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Norte) 2,Peca (Rampa Oeste) 1,
+  Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0,
+  Peca Lava 0,Peca (Rampa Sul) 1,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Recta 2,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Oeste) 3,Peca (Rampa Oeste) 2,
+  Peca (Curva Sul) 2,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Rampa Norte) 1,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Rampa Norte) 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Norte) 0,Peca (Curva Sul) 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Recta 0,Peca Recta 0,
+  Peca (Curva Sul) 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+RunT2: Tarefa2_2017li1g78.hs:(392,1)-(489,66): Non-exhaustive patterns in function checkAltComp
+
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 71 tests)
+*** Failed! (after 71 tests): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  RunT2: Tarefa2_2017li1g78.hs:(392,1)-(489,66): Non-exhaustive patterns in function checkAltComp
+  
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(10,1)
+Sul</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/78/t2/28/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca (Curva Norte) 0,Peca (Curva Este) 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Norte) (-1),Peca (Rampa Norte) (-1),
+  Peca (Curva Sul) 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Rampa Oeste) (-1),
+  Peca (Rampa Oeste) (-2),Peca (Rampa Este) (-2),
+  Peca (Curva Sul) (-1),Peca (Rampa Sul) (-1),
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca (Curva Oeste) 0,
+  Peca (Rampa Oeste) (-1),Peca (Rampa Oeste) (-2),
+  Peca (Rampa Este) (-2),Peca Recta (-1),
+  Peca Recta (-1),Peca (Rampa Este) (-1),
+  Peca (Rampa Este) 0,Peca (Rampa Oeste) 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-success" data-title="Resultado">OK</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/78/t2/29/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca (Rampa Este) 0,
+  Peca (Rampa Oeste) 0,Peca Recta 0,
+  Peca (Curva Este) 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Recta 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca (Rampa Norte) 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Recta 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Recta 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca (Curva Norte) 1,
+  Peca (Rampa Oeste) 0,Peca Recta 0,Peca Recta 0,
+  Peca (Curva Este) 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca (Rampa Norte) 0,
+  Peca Lava 0,Peca Lava 0,Peca (Curva Oeste) 0,
+  Peca (Curva Sul) 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Norte) 0,Peca (Curva Sul) 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+RunT2: Tarefa2_2017li1g78.hs:(392,1)-(489,66): Non-exhaustive patterns in function checkAltComp
+
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 5 tests)
+*** Failed! (after 5 tests): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  RunT2: Tarefa2_2017li1g78.hs:(392,1)-(489,66): Non-exhaustive patterns in function checkAltComp
+  
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(5,1)
+Sul</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/78/t2/30/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca (Curva Norte) (-1),
+  Peca (Rampa Oeste) (-2),Peca (Curva Este) (-2),
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Norte) (-1),
+  Peca (Curva Sul) (-1),Peca Lava 0,
+  Peca (Rampa Sul) (-2),Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Rampa Sul) (-1),Peca Lava 0,
+  Peca Lava 0,Peca Recta (-1),Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Rampa Norte) (-1),Peca Lava 0,
+  Peca Lava 0,Peca (Rampa Sul) (-1),Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca (Curva Este) 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Rampa Sul) (-1),Peca Lava 0,
+  Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,
+  Peca (Curva Norte) 0,Peca Recta 0,Peca (Curva Sul) 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,
+  Peca Lava 0,Peca (Curva Oeste) 1,
+  Peca (Rampa Oeste) 0,Peca (Curva Sul) 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+RunT2: Tarefa2_2017li1g78.hs:(392,1)-(489,66): Non-exhaustive patterns in function checkAltComp
+
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 63 tests)
+*** Failed! (after 63 tests): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g078/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  RunT2: Tarefa2_2017li1g78.hs:(392,1)-(489,66): Non-exhaustive patterns in function checkAltComp
+  
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(4,6)
+Norte</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/78/t2/31/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,
+  Peca (Rampa Este) 0,Peca (Rampa Este) 1,Peca Recta 2,
+  Peca Recta 2,Peca (Rampa Este) 2,Peca (Curva Este) 3,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Recta 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Rampa Norte) 2,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Sul) 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca (Curva Oeste) 2,Peca (Rampa Este) 2,
+  Peca (Curva Este) 3,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Recta 5,Peca (Rampa Oeste) 4,
+  Peca (Rampa Oeste) 3,Peca (Rampa Oeste) 2,
+  Peca (Rampa Este) 2,Peca (Curva Sul) 3,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-success" data-title="Resultado">OK</td>
+            </tr>
+        
+    </tbody>
+</table>
+
+</div>
+
+</body>
+
+</html>

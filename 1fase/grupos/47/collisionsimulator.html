@@ -1,0 +1,64 @@
+Output:
+[1 of 3] Compiling LI11718          ( LI11718.hs, LI11718.js_o )
+[2 of 3] Compiling Tarefa3_2017li1g47 ( Tarefa3_2017li1g47.hs, Tarefa3_2017li1g47.js_o )
+
+Errors:
+
+Tarefa3_2017li1g47.hs:24:24: error:
+    • Couldn't match expected type ‘([Peca], [Posicao], [Altura])’
+                  with actual type ‘[a0]’
+    • In the expression:
+        (++) (funcao_aux2 x y h [] [] []) (funcao_aux 0 (y + 1) t)
+      In an equation for ‘funcao_aux’:
+          funcao_aux x y (h : t)
+            = (++) (funcao_aux2 x y h [] [] []) (funcao_aux 0 (y + 1) t)
+
+Tarefa3_2017li1g47.hs:24:30: error:
+    • Couldn't match expected type ‘[a0]’
+                  with actual type ‘([Peca], [Posicao], [Altura])’
+    • In the first argument of ‘(++)’, namely
+        ‘(funcao_aux2 x y h [] [] [])’
+      In the expression:
+        (++) (funcao_aux2 x y h [] [] []) (funcao_aux 0 (y + 1) t)
+      In an equation for ‘funcao_aux’:
+          funcao_aux x y (h : t)
+            = (++) (funcao_aux2 x y h [] [] []) (funcao_aux 0 (y + 1) t)
+
+Tarefa3_2017li1g47.hs:24:60: error:
+    • Couldn't match expected type ‘[a0]’
+                  with actual type ‘([Peca], [Posicao], [Altura])’
+    • In the second argument of ‘(++)’, namely
+        ‘(funcao_aux 0 (y + 1) t)’
+      In the expression:
+        (++) (funcao_aux2 x y h [] [] []) (funcao_aux 0 (y + 1) t)
+      In an equation for ‘funcao_aux’:
+          funcao_aux x y (h : t)
+            = (++) (funcao_aux2 x y h [] [] []) (funcao_aux 0 (y + 1) t)
+
+Tarefa3_2017li1g47.hs:28:60: error:
+    • Couldn't match expected type ‘([Peca], [Posicao], [Altura])’
+                  with actual type ‘[([Peca], [(Int, Int)], [Altura])]’
+    • In the expression:
+        (((Peca tipo alt) : w), ((x, y) : z), (alt : k))
+        : funcao_aux2 (x + 1) y t w z k
+      In an equation for ‘funcao_aux2’:
+          funcao_aux2 x y ((Peca tipo alt) : t) w z k
+            | tipo /= Lava
+            = (((Peca tipo alt) : w), ((x, y) : z), (alt : k))
+              : funcao_aux2 (x + 1) y t w z k
+
+Tarefa3_2017li1g47.hs:28:105: error:
+    • Couldn't match expected type ‘[([Peca], [(Int, Int)], [Altura])]’
+                  with actual type ‘([Peca], [Posicao], [Altura])’
+    • In the second argument of ‘(:)’, namely
+        ‘funcao_aux2 (x + 1) y t w z k’
+      In the expression:
+        (((Peca tipo alt) : w), ((x, y) : z), (alt : k))
+        : funcao_aux2 (x + 1) y t w z k
+      In an equation for ‘funcao_aux2’:
+          funcao_aux2 x y ((Peca tipo alt) : t) w z k
+            | tipo /= Lava
+            = (((Peca tipo alt) : w), ((x, y) : z), (alt : k))
+              : funcao_aux2 (x + 1) y t w z k
+
+Exit Code: 1

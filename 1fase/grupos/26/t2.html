@@ -1,0 +1,2828 @@
+
+<!DOCTYPE html>
+<html>
+
+<head><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108230466-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108230466-1');
+</script>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Tarefa 2</title>
+</head>
+
+<body>
+
+<p>Output:
+[2 of 3] Compiling Tarefa2_2017li1g26 ( Tarefa2_2017li1g26.hs, Tarefa2_2017li1g26.o )
+
+Errors:
+
+Tarefa2_2017li1g26.hs:71:45: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; (Int, Int) -&gt; Peca
+   |
+71 | testaCirc (x,y) tab = let (Peca tipo alt) = quePeca tab (x,y) 
+   |                                             ^^^^^^^
+
+Tarefa2_2017li1g26.hs:73:53: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; (Int, Int) -&gt; Peca
+   |
+73 |                         Rampa Norte -&gt; not (isLava (quePeca tab (x , y+1))) &amp;&amp; not (isLava (quePeca tab (x , y-1)))
+   |                                                     ^^^^^^^
+
+Tarefa2_2017li1g26.hs:73:93: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; (Int, Int) -&gt; Peca
+   |
+73 |                         Rampa Norte -&gt; not (isLava (quePeca tab (x , y+1))) &amp;&amp; not (isLava (quePeca tab (x , y-1)))
+   |                                                                                             ^^^^^^^
+
+Tarefa2_2017li1g26.hs:74:51: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; (Int, Int) -&gt; Peca
+   |
+74 |                         Rampa Sul -&gt; not (isLava (quePeca tab (x , y+1))) &amp;&amp; not (isLava (quePeca tab (x , y-1)))
+   |                                                   ^^^^^^^
+
+Tarefa2_2017li1g26.hs:74:91: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; (Int, Int) -&gt; Peca
+   |
+74 |                         Rampa Sul -&gt; not (isLava (quePeca tab (x , y+1))) &amp;&amp; not (isLava (quePeca tab (x , y-1)))
+   |                                                                                           ^^^^^^^
+
+Tarefa2_2017li1g26.hs:75:52: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; (Int, Int) -&gt; Peca
+   |
+75 |                         Rampa Este -&gt; not (isLava (quePeca tab(x+1 , y))) &amp;&amp; not (isLava (quePeca tab (x-1 , y)))
+   |                                                    ^^^^^^^
+
+Tarefa2_2017li1g26.hs:75:91: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; (Int, Int) -&gt; Peca
+   |
+75 |                         Rampa Este -&gt; not (isLava (quePeca tab(x+1 , y))) &amp;&amp; not (isLava (quePeca tab (x-1 , y)))
+   |                                                                                           ^^^^^^^
+
+Tarefa2_2017li1g26.hs:76:53: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; (Int, Int) -&gt; Peca
+   |
+76 |                         Rampa Oeste -&gt; not (isLava (quePeca tab (x+1 , y))) &amp;&amp; not (isLava (quePeca tab (x-1 , y)))
+   |                                                     ^^^^^^^
+
+Tarefa2_2017li1g26.hs:76:93: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; (Int, Int) -&gt; Peca
+   |
+76 |                         Rampa Oeste -&gt; not (isLava (quePeca tab (x+1 , y))) &amp;&amp; not (isLava (quePeca tab (x-1 , y)))
+   |                                                                                             ^^^^^^^
+
+Tarefa2_2017li1g26.hs:77:53: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; (Int, Int) -&gt; Peca
+   |
+77 |                         Curva Norte -&gt; not (isLava (quePeca tab (x ,y+1))) &amp;&amp; not (isLava (quePeca tab (x+1 , y)))
+   |                                                     ^^^^^^^
+
+Tarefa2_2017li1g26.hs:77:92: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; (Int, Int) -&gt; Peca
+   |
+77 |                         Curva Norte -&gt; not (isLava (quePeca tab (x ,y+1))) &amp;&amp; not (isLava (quePeca tab (x+1 , y)))
+   |                                                                                            ^^^^^^^
+
+Tarefa2_2017li1g26.hs:78:51: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; (Int, Int) -&gt; Peca
+   |
+78 |                         Curva Sul -&gt; not (isLava (quePeca tab (x-1 , y))) &amp;&amp; not (isLava (quePeca tab (x , y-1)))
+   |                                                   ^^^^^^^
+
+Tarefa2_2017li1g26.hs:78:91: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; (Int, Int) -&gt; Peca
+   |
+78 |                         Curva Sul -&gt; not (isLava (quePeca tab (x-1 , y))) &amp;&amp; not (isLava (quePeca tab (x , y-1)))
+   |                                                                                           ^^^^^^^
+
+Tarefa2_2017li1g26.hs:79:52: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; (Int, Int) -&gt; Peca
+   |
+79 |                         Curva Este -&gt; not (isLava (quePeca tab (x-1 , y))) &amp;&amp; not (isLava (quePeca tab (x , y+1)))
+   |                                                    ^^^^^^^
+
+Tarefa2_2017li1g26.hs:79:92: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; (Int, Int) -&gt; Peca
+   |
+79 |                         Curva Este -&gt; not (isLava (quePeca tab (x-1 , y))) &amp;&amp; not (isLava (quePeca tab (x , y+1)))
+   |                                                                                            ^^^^^^^
+
+Tarefa2_2017li1g26.hs:80:53: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; (Int, Int) -&gt; Peca
+   |
+80 |                         Curva Oeste -&gt; not (isLava (quePeca tab (x , y-1))) &amp;&amp; not (isLava (quePeca tab (x+1 , y)))
+   |                                                     ^^^^^^^
+
+Tarefa2_2017li1g26.hs:80:93: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; (Int, Int) -&gt; Peca
+   |
+80 |                         Curva Oeste -&gt; not (isLava (quePeca tab (x , y-1))) &amp;&amp; not (isLava (quePeca tab (x+1 , y)))
+   |                                                                                             ^^^^^^^
+
+Tarefa2_2017li1g26.hs:81:48: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; (Int, Int) -&gt; Peca
+   |
+81 |                         Recta -&gt; (not (isLava (quePeca tab (x , y+1))) &amp;&amp; not (isLava (quePeca tab (x , y-1)))) || (not (isLava (quePeca tab (x+1 , y))) &amp;&amp; not (isLava (quePeca tab (x-1 , y))))
+   |                                                ^^^^^^^
+
+Tarefa2_2017li1g26.hs:81:88: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; (Int, Int) -&gt; Peca
+   |
+81 |                         Recta -&gt; (not (isLava (quePeca tab (x , y+1))) &amp;&amp; not (isLava (quePeca tab (x , y-1)))) || (not (isLava (quePeca tab (x+1 , y))) &amp;&amp; not (isLava (quePeca tab (x-1 , y))))
+   |                                                                                        ^^^^^^^
+
+Tarefa2_2017li1g26.hs:81:130: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; (Int, Int) -&gt; Peca
+   |
+81 |                         Recta -&gt; (not (isLava (quePeca tab (x , y+1))) &amp;&amp; not (isLava (quePeca tab (x , y-1)))) || (not (isLava (quePeca tab (x+1 , y))) &amp;&amp; not (isLava (quePeca tab (x-1 , y))))
+   |                                                                                                                                  ^^^^^^^
+
+Tarefa2_2017li1g26.hs:81:170: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; (Int, Int) -&gt; Peca
+   |
+81 |                         Recta -&gt; (not (isLava (quePeca tab (x , y+1))) &amp;&amp; not (isLava (quePeca tab (x , y-1)))) || (not (isLava (quePeca tab (x+1 , y))) &amp;&amp; not (isLava (quePeca tab (x-1 , y))))
+   |                                                                                                                                                                          ^^^^^^^
+
+Tarefa2_2017li1g26.hs:114:39: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; Posicao -&gt; Peca
+    |
+114 | oriPeca tab p = let (Peca tipo alt) = quePeca tab p
+    |                                       ^^^^^^^
+
+Tarefa2_2017li1g26.hs:123:40: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; Posicao -&gt; Peca
+    |
+123 | tipoPeca tab p = let (Peca tipo alt) = quePeca tab p
+    |                                        ^^^^^^^
+
+Tarefa2_2017li1g26.hs:139:62: error:
+    • Variable not in scope: oposta :: Orientacao -&gt; Orientacao
+    • Perhaps you meant ‘pista’ (imported from LI11718)
+    |
+139 |                         (Rampa ori) -&gt; (ori == o) || (ori == oposta(o))
+    |                                                              ^^^^^^
+
+Tarefa2_2017li1g26.hs:145:61: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; (Int, Int) -&gt; Peca
+    |
+145 | validaCurva (x,y) tab oriPeca | oriPeca == Sul = not(isLava(quePeca tab (x-1,y))) &amp;&amp; not(isLava(quePeca tab (x,y-1)))
+    |                                                             ^^^^^^^
+
+Tarefa2_2017li1g26.hs:145:97: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; (Int, Int) -&gt; Peca
+    |
+145 | validaCurva (x,y) tab oriPeca | oriPeca == Sul = not(isLava(quePeca tab (x-1,y))) &amp;&amp; not(isLava(quePeca tab (x,y-1)))
+    |                                                                                                 ^^^^^^^
+
+Tarefa2_2017li1g26.hs:146:63: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; (Int, Int) -&gt; Peca
+    |
+146 |                               | oriPeca == Norte = not(isLava(quePeca tab (x+1,y))) &amp;&amp; not(isLava(quePeca tab (x,y+1)))
+    |                                                               ^^^^^^^
+
+Tarefa2_2017li1g26.hs:146:99: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; (Int, Int) -&gt; Peca
+    |
+146 |                               | oriPeca == Norte = not(isLava(quePeca tab (x+1,y))) &amp;&amp; not(isLava(quePeca tab (x,y+1)))
+    |                                                                                                   ^^^^^^^
+
+Tarefa2_2017li1g26.hs:147:63: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; (Int, Int) -&gt; Peca
+    |
+147 |                               | oriPeca == Este  = not(isLava(quePeca tab (x-1,y))) &amp;&amp; not(isLava(quePeca tab (x,y+1)))
+    |                                                               ^^^^^^^
+
+Tarefa2_2017li1g26.hs:147:99: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; (Int, Int) -&gt; Peca
+    |
+147 |                               | oriPeca == Este  = not(isLava(quePeca tab (x-1,y))) &amp;&amp; not(isLava(quePeca tab (x,y+1)))
+    |                                                                                                   ^^^^^^^
+
+Tarefa2_2017li1g26.hs:148:63: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; (Int, Int) -&gt; Peca
+    |
+148 |                               | oriPeca == Oeste = not(isLava(quePeca tab (x+1,y))) &amp;&amp; not(isLava(quePeca tab (x,y-1)))
+    |                                                               ^^^^^^^
+
+Tarefa2_2017li1g26.hs:148:99: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; (Int, Int) -&gt; Peca
+    |
+148 |                               | oriPeca == Oeste = not(isLava(quePeca tab (x+1,y))) &amp;&amp; not(isLava(quePeca tab (x,y-1)))
+    |                                                                                                   ^^^^^^^
+
+Tarefa2_2017li1g26.hs:153:61: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; (Int, Int) -&gt; Peca
+    |
+153 | validaRecta (x,y) tab oriPeca | oriPeca == Sul = not(isLava(quePeca tab (x,y+1))) &amp;&amp; not(isLava(quePeca tab (x,y-1)))
+    |                                                             ^^^^^^^
+
+Tarefa2_2017li1g26.hs:153:97: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; (Int, Int) -&gt; Peca
+    |
+153 | validaRecta (x,y) tab oriPeca | oriPeca == Sul = not(isLava(quePeca tab (x,y+1))) &amp;&amp; not(isLava(quePeca tab (x,y-1)))
+    |                                                                                                 ^^^^^^^
+
+Tarefa2_2017li1g26.hs:154:63: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; (Int, Int) -&gt; Peca
+    |
+154 |                               | oriPeca == Norte = not(isLava(quePeca tab (x,y+1))) &amp;&amp; not(isLava(quePeca tab (x,y-1)))
+    |                                                               ^^^^^^^
+
+Tarefa2_2017li1g26.hs:154:99: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; (Int, Int) -&gt; Peca
+    |
+154 |                               | oriPeca == Norte = not(isLava(quePeca tab (x,y+1))) &amp;&amp; not(isLava(quePeca tab (x,y-1)))
+    |                                                                                                   ^^^^^^^
+
+Tarefa2_2017li1g26.hs:155:63: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; (Int, Int) -&gt; Peca
+    |
+155 |                               | oriPeca == Este  = not(isLava(quePeca tab (x-1,y))) &amp;&amp; not(isLava(quePeca tab (x+1,y)))
+    |                                                               ^^^^^^^
+
+Tarefa2_2017li1g26.hs:155:99: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; (Int, Int) -&gt; Peca
+    |
+155 |                               | oriPeca == Este  = not(isLava(quePeca tab (x-1,y))) &amp;&amp; not(isLava(quePeca tab (x+1,y)))
+    |                                                                                                   ^^^^^^^
+
+Tarefa2_2017li1g26.hs:156:63: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; (Int, Int) -&gt; Peca
+    |
+156 |                               | oriPeca == Oeste = not(isLava(quePeca tab (x-1,y))) &amp;&amp; not(isLava(quePeca tab (x+1,y)))
+    |                                                               ^^^^^^^
+
+Tarefa2_2017li1g26.hs:156:99: error:
+    Variable not in scope: quePeca :: Tabuleiro -&gt; (Int, Int) -&gt; Peca
+    |
+156 |                               | oriPeca == Oeste = not(isLava(quePeca tab (x-1,y))) &amp;&amp; not(isLava(quePeca tab (x+1,y)))
+    |                                                                                                   ^^^^^^^
+
+Exit Code: 1</p>
+    
+<div id="demo">
+
+<div id="tablediv" class="table-responsive-vertical shadow-z-1">
+<table id="table" class="table table-hover table-mc-light-blue">
+    <thead>
+        <tr>
+            
+                <th>Tabuleiro</th>
+            
+                <th>Posicao</th>
+            
+                <th>Orientação</th>
+            
+            <th>Resultado</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/26/t2/1/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Norte) (-1),Peca Recta (-1),
+  Peca Recta (-1),Peca Recta (-1),Peca Recta (-1),
+  Peca (Curva Este) (-1),Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Recta (-1),Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Recta (-1),Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Rampa Sul) (-1),Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Recta (-1),Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Rampa Norte) (-1),Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Recta (-1),Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Norte) (-1),Peca Recta (-1),
+  Peca Recta (-1),Peca Recta (-1),
+  Peca (Rampa Este) (-1),Peca (Rampa Oeste) (-1),
+  Peca Recta (-1),Peca Recta (-1),
+  Peca (Curva Sul) (-1),Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Recta (-1),Peca Lava 0,Peca Lava 0,
+  Peca Recta (-1),Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Rampa Norte) (-2),Peca Lava 0,
+  Peca Lava 0,Peca Recta (-1),Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Recta (-2),Peca Lava 0,Peca Lava 0,
+  Peca Recta (-1),Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Recta (-2),Peca Lava 0,Peca Lava 0,
+  Peca (Curva Oeste) (-1),Peca (Rampa Este) (-1),
+  Peca (Rampa Oeste) (-1),Peca Recta (-1),
+  Peca Recta (-1),Peca (Curva Este) (-1),Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Oeste) (-2),
+  Peca (Curva Este) (-2),Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Recta (-1),Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca (Curva Oeste) (-2),
+  Peca (Curva Este) (-2),Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta (-1),
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Oeste) (-2),Peca (Curva Este) (-2),
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Recta (-1),Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Oeste) (-2),Peca Recta (-2),
+  Peca Recta (-2),Peca (Rampa Este) (-2),
+  Peca Recta (-1),Peca Recta (-1),Peca Recta (-1),
+  Peca Recta (-1),Peca Recta (-1),Peca Recta (-1),
+  Peca Recta (-1),Peca (Rampa Este) (-1),Peca Recta 0,
+  Peca (Curva Este) 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca (Rampa Sul) (-1),Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Recta 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Recta 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Recta 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Norte) (-2),Peca Recta (-2),
+  Peca Recta (-2),Peca (Rampa Este) (-2),
+  Peca (Rampa Este) (-1),Peca Recta 0,Peca Recta 0,
+  Peca Recta 0,Peca (Curva Sul) 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Recta 0,Peca Lava 0],
+ [Peca Lava 0,Peca Recta (-2),Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Recta 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Oeste) (-2),Peca Recta (-2),
+  Peca (Rampa Oeste) (-3),Peca Recta (-3),
+  Peca (Rampa Este) (-3),Peca Recta (-2),
+  Peca Recta (-2),Peca (Rampa Este) (-2),
+  Peca Recta (-1),Peca (Rampa Este) (-1),Peca Recta 0,
+  Peca Recta 0,Peca Recta 0,Peca Recta 0,Peca Recta 0,
+  Peca Recta 0,Peca (Curva Sul) 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+/Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 1 test)
+*** Failed! (after 1 test): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(7,11)
+Este</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/26/t2/2/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Norte) (-1),Peca Recta (-1),
+  Peca (Rampa Oeste) (-2),Peca Recta (-2),
+  Peca Recta (-2),Peca Recta (-2),
+  Peca (Curva Este) (-2),Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca (Curva Norte) (-2),
+  Peca (Curva Este) (-2),Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Recta (-1),Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Recta (-2),Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Recta (-2),
+  Peca Recta (-2),Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Norte) (-1),Peca Recta (-1),
+  Peca Recta (-1),Peca (Curva Sul) (-1),Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Rampa Norte) (-3),Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Recta (-2),Peca Recta (-2),
+  Peca Lava 0],
+ [Peca Lava 0,Peca Recta (-1),Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Recta (-3),Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Recta (-2),
+  Peca Recta (-2),Peca Lava 0],
+ [Peca Lava 0,Peca (Rampa Sul) (-1),Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Oeste) (-3),Peca Recta (-3),
+  Peca (Rampa Este) (-3),Peca Recta (-2),
+  Peca (Curva Sul) (-2),Peca (Rampa Sul) (-2),
+  Peca Lava 0],
+ [Peca Lava 0,Peca Recta 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta (-1),
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Oeste) 0,Peca Recta 0,
+  Peca Recta 0,Peca Recta 0,Peca (Curva Este) 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Recta (-1),Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Recta 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca (Curva Norte) (-1),
+  Peca (Curva Sul) (-1),Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca (Curva Oeste) 0,Peca Recta 0,
+  Peca (Rampa Este) 0,Peca Recta 1,Peca Recta 1,
+  Peca (Rampa Oeste) 0,Peca (Rampa Oeste) (-1),
+  Peca Recta (-1),Peca Recta (-1),
+  Peca (Curva Sul) (-1),Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+/Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 1 test)
+*** Failed! (after 1 test): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(7,4)
+Oeste</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/26/t2/3/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Norte) 1,Peca (Rampa Este) 1,
+  Peca Recta 2,Peca Recta 2,Peca (Curva Este) 2,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta 2,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta 2,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,
+  Peca Lava 0,Peca (Curva Norte) 2,Peca Recta 2,
+  Peca (Curva Sul) 2,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Rampa Norte) 0,Peca Lava 0,Peca Recta 2,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta 0,
+  Peca Lava 0,Peca Recta 2,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta 0,
+  Peca Lava 0,Peca (Rampa Norte) 1,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta 0,
+  Peca Lava 0,Peca Recta 1,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,
+  Peca (Curva Sul) 0,Peca Lava 0,Peca Recta 1,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Recta 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Recta 1,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Oeste) 0,
+  Peca (Rampa Este) 0,Peca Recta 1,Peca Recta 1,
+  Peca (Curva Sul) 1,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+/Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 1 test)
+*** Failed! (after 1 test): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(2,3)
+Oeste</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/26/t2/4/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Norte) 1,Peca Recta 1,
+  Peca Recta 0,Peca Recta 0,Peca Recta 0,
+  Peca (Rampa Este) 0,Peca Recta 1,Peca Recta 1,
+  Peca Recta 1,Peca (Curva Este) 1,Peca Lava 0],
+ [Peca Lava 0,Peca Recta 1,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca (Rampa Sul) 1,
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,
+  Peca Recta 1,Peca Recta 1,Peca (Rampa Este) 1,
+  Peca Recta 2,Peca Recta 2,Peca Recta 2,Peca Recta 2,
+  Peca (Curva Sul) 2,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+/Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 1 test)
+*** Failed! (after 1 test): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(3,4)
+Oeste</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/26/t2/5/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca (Curva Norte) 0,Peca Recta 0,Peca Recta 0,
+  Peca Recta 0,Peca Recta 0,Peca Recta 0,
+  Peca (Rampa Este) 0,Peca Recta 1,Peca (Rampa Este) 1,
+  Peca Recta 2,Peca Recta 2,Peca (Curva Este) 2,
+  Peca Lava 0],
+ [Peca Recta 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta 2,
+  Peca Lava 0],
+ [Peca Recta 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Rampa Norte) 1,Peca Lava 0],
+ [Peca Recta 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca (Curva Norte) 1,
+  Peca (Curva Sul) 1,Peca Lava 0],
+ [Peca Recta 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca (Curva Norte) 1,
+  Peca Recta 1,Peca Recta 1,Peca Recta 1,
+  Peca (Curva Sul) 1,Peca Lava 0,Peca Lava 0],
+ [Peca Recta 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca (Curva Oeste) 0,Peca Recta 0,
+  Peca (Rampa Este) 0,Peca Recta 1,Peca Recta 1,
+  Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+/Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 1 test)
+*** Failed! (after 1 test): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(8,3)
+Este</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/26/t2/6/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,
+  Peca (Curva Este) 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,
+  Peca Recta 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Recta 1,Peca Lava 0,Peca Recta 0,
+  Peca Recta 0,Peca Recta 0,Peca (Rampa Este) 0,
+  Peca Recta 1,Peca Recta 1,Peca Recta 1,
+  Peca (Curva Este) 1,Peca Lava 0],
+ [Peca Lava 0,Peca Recta 1,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca (Rampa Sul) 1,
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,
+  Peca Recta 1,Peca Recta 1,Peca (Rampa Este) 1,
+  Peca Recta 2,Peca Recta 2,Peca Recta 2,Peca Recta 2,
+  Peca (Curva Sul) 2,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+/Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 1 test)
+*** Failed! (after 1 test): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(4,0)
+Sul</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/26/t2/7/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Norte) 1,Peca (Rampa Este) 1,
+  Peca Recta 2,Peca Recta 2,Peca (Curva Este) 2,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta 2,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Recta 0,Peca Lava 0,Peca Recta 1,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta 2,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,
+  Peca Lava 0,Peca (Curva Norte) 2,Peca Recta 2,
+  Peca (Curva Sul) 2,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Rampa Norte) 0,Peca Lava 0,Peca Recta 2,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta 0,
+  Peca Lava 0,Peca Recta 2,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta 0,
+  Peca Lava 0,Peca (Rampa Norte) 1,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta 0,
+  Peca Lava 0,Peca Recta 1,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,
+  Peca (Curva Sul) 0,Peca Lava 0,Peca Recta 1,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Recta 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Recta 1,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Oeste) 0,
+  Peca (Rampa Este) 0,Peca Recta 1,Peca Recta 1,
+  Peca (Curva Sul) 1,Peca Lava 0,Peca (Rampa Norte) 2,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+/Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 1 test)
+*** Failed! (after 1 test): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(2,8)
+Este</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/26/t2/8/run.html">[[Peca Lava 2,Peca Lava 2,Peca Lava 2,Peca Lava 2],
+ [Peca Lava 2,Peca (Curva Norte) 2,
+  Peca (Curva Este) 2,Peca Lava 2],
+ [Peca Lava 2,Peca (Curva Oeste) 2,Peca (Curva Sul) 2,
+  Peca Lava 2],
+ [Peca Lava 2,Peca Lava 2,Peca Lava 2,Peca Lava 2]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+/Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 1 test)
+*** Failed! (after 1 test): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(2,1)
+Norte</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/26/t2/9/run.html">[[Peca (Curva Norte) 5,Peca (Curva Este) 5],
+ [Peca (Curva Oeste) 5,Peca (Curva Sul) 5]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+/Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 1 test)
+*** Failed! (after 1 test): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(1,0)
+Oeste</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/26/t2/10/run.html">[[Peca (Curva Norte) 2,Peca Recta 2,
+  Peca (Curva Este) 2],
+ [Peca Recta 2,Peca Lava 2,Peca Recta 2],
+ [Peca (Curva Oeste) 2,Peca Recta 2,
+  Peca (Curva Sul) 2]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+/Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 1 test)
+*** Failed! (after 1 test): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(2,0)
+Este</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/26/t2/11/run.html">[[Peca (Curva Norte) 2,Peca (Curva Este) 2],
+ [Peca (Curva Oeste) 2,Peca (Curva Sul) 2]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+/Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 1 test)
+*** Failed! (after 1 test): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(1,1)
+Oeste</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/26/t2/12/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+/Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 1 test)
+*** Failed! (after 1 test): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(3,5)
+Sul</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/26/t2/13/run.html">[[Peca (Curva Norte) 2,Peca Recta 2,
+  Peca (Curva Este) 2],
+ [Peca Recta 2,Peca Recta 2,Peca Recta 2],
+ [Peca (Curva Oeste) 2,Peca Recta 2,
+  Peca (Curva Sul) 2]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+/Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 1 test)
+*** Failed! (after 1 test): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(2,1)
+Norte</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/26/t2/14/run.html">[[Peca (Curva Norte) 2,Peca Recta 2,
+  Peca (Curva Este) 2],
+ [Peca Recta 2,Peca Lava 0,Peca Recta 2],
+ [Peca (Curva Oeste) 2,Peca Recta 2,
+  Peca (Curva Sul) 2]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+/Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 1 test)
+*** Failed! (after 1 test): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(2,2)
+Sul</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/26/t2/15/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,
+  Peca (Curva Este) 0,Peca Lava 0],
+ [Peca Lava 0,Peca Recta 0,Peca Lava 0,Peca Recta 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Oeste) 0,Peca Recta 0,
+  Peca (Curva Sul) 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+/Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 1 test)
+*** Failed! (after 1 test): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(2,0)
+Sul</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/26/t2/16/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Norte) 0,
+  Peca (Curva Este) 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Oeste) 0,Peca (Curva Sul) 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+/Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 1 test)
+*** Failed! (after 1 test): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(2,1)
+Este</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/26/t2/17/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,
+  Peca (Curva Este) 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Recta 0,Peca Lava 0,Peca Recta 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Oeste) 0,Peca Recta 0,
+  Peca Recta 0,Peca Recta 0,Peca (Curva Este) 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta 0,
+  Peca Lava 0,Peca Recta 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Oeste) 0,Peca Recta 0,Peca (Curva Sul) 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+/Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 1 test)
+*** Failed! (after 1 test): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(1,4)
+Oeste</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/26/t2/18/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Norte) 0,Peca Recta 0,
+  Peca (Curva Este) 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Recta 0,Peca Lava 0,Peca (Rampa Norte) (-1),
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,
+  Peca Recta 0,Peca (Curva Sul) 0,Peca Lava 0,
+  Peca Recta (-1),Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Recta 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca (Curva Oeste) (-1),
+  Peca (Curva Este) (-1),Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Recta 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Oeste) (-1),Peca (Curva Este) (-1),
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Rampa Norte) (-1),Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Norte) (-1),Peca (Curva Sul) (-1),
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Rampa Norte) (-2),Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Norte) (-1),Peca (Curva Sul) (-1),
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Oeste) (-2),Peca Recta (-2),
+  Peca (Curva Este) (-2),Peca Lava 0,Peca Lava 0,
+  Peca (Curva Oeste) (-1),Peca Recta (-1),
+  Peca Recta (-1),Peca (Rampa Oeste) (-2),
+  Peca (Curva Este) (-2),Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Oeste) (-2),Peca (Curva Este) (-2),
+  Peca Lava 0,Peca (Curva Norte) (-3),
+  Peca (Rampa Este) (-3),Peca Recta (-2),
+  Peca Recta (-2),Peca (Curva Sul) (-2),Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Oeste) (-2),Peca (Rampa Oeste) (-3),
+  Peca (Curva Sul) (-3),Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+/Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 1 test)
+*** Failed! (after 1 test): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(9,8)
+Norte</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/26/t2/19/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Norte) 1,Peca (Curva Este) 1,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Rampa Norte) 0,Peca (Rampa Norte) 0,
+  Peca Lava 0,Peca (Curva Norte) 1,Peca (Curva Este) 1,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,
+  Peca Recta 0,Peca Recta 0,Peca (Curva Sul) 0,
+  Peca Lava 0,Peca (Rampa Norte) 0,
+  Peca (Rampa Norte) 0,Peca Lava 0,
+  Peca (Curva Norte) 1,Peca (Curva Este) 1,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Recta 0,Peca (Curva Norte) (-1),
+  Peca (Rampa Este) (-1),Peca Recta 0,Peca Recta 0,
+  Peca Recta 0,Peca Recta 0,Peca (Curva Sul) 0,
+  Peca Lava 0,Peca (Rampa Norte) 0,
+  Peca (Rampa Norte) 0,Peca Lava 0,
+  Peca (Curva Norte) 1,Peca (Curva Este) 1,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Recta 0,Peca (Curva Oeste) (-1),
+  Peca (Rampa Este) (-1),Peca (Curva Sul) 0,
+  Peca (Curva Norte) (-1),Peca (Rampa Este) (-1),
+  Peca Recta 0,Peca Recta 0,Peca Recta 0,Peca Recta 0,
+  Peca (Curva Sul) 0,Peca Lava 0,Peca (Rampa Norte) 0,
+  Peca (Rampa Norte) 0,Peca Lava 0,
+  Peca (Curva Norte) 1,Peca (Curva Este) 1,
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Oeste) 0,Peca Recta 0,
+  Peca Recta 0,Peca (Curva Este) 0,
+  Peca (Curva Oeste) (-1),Peca (Rampa Este) (-1),
+  Peca (Curva Sul) 0,Peca (Curva Norte) (-1),
+  Peca (Rampa Este) (-1),Peca Recta 0,Peca Recta 0,
+  Peca Recta 0,Peca Recta 0,Peca (Curva Sul) 0,
+  Peca Lava 0,Peca (Rampa Norte) 0,
+  Peca (Rampa Norte) 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Oeste) 0,Peca Recta 0,Peca Recta 0,
+  Peca (Curva Este) 0,Peca (Curva Oeste) (-1),
+  Peca (Rampa Este) (-1),Peca (Curva Sul) 0,
+  Peca (Curva Norte) (-1),Peca (Rampa Este) (-1),
+  Peca Recta 0,Peca Recta 0,Peca Recta 0,Peca Recta 0,
+  Peca (Curva Sul) 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Oeste) 0,Peca Recta 0,Peca Recta 0,
+  Peca (Curva Este) 0,Peca (Curva Oeste) (-1),
+  Peca (Rampa Este) (-1),Peca (Curva Sul) 0,
+  Peca (Curva Norte) (-1),Peca (Rampa Este) (-1),
+  Peca Recta 0,Peca (Curva Este) 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca (Curva Oeste) 0,
+  Peca Recta 0,Peca Recta 0,Peca (Curva Este) 0,
+  Peca (Curva Oeste) (-1),Peca (Rampa Este) (-1),
+  Peca (Curva Sul) 0,Peca Recta 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca (Curva Oeste) 0,Peca Recta 0,
+  Peca Recta 0,Peca Recta 0,Peca (Curva Sul) 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+/Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 1 test)
+*** Failed! (after 1 test): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(11,3)
+Este</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/26/t2/20/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Rampa Este) 0,Peca (Rampa Este) 1,
+  Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+/Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 1 test)
+*** Failed! (after 1 test): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(3,1)
+Oeste</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/26/t2/21/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Rampa Oeste) (-1),
+  Peca (Rampa Oeste) (-2),Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+/Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 1 test)
+*** Failed! (after 1 test): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(3,2)
+Este</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/26/t2/22/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca (Curva Este) 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca (Curva Sul) 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+/Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 1 test)
+*** Failed! (after 1 test): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(2,3)
+Norte</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/26/t2/23/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca (Curva Este) 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca (Curva Sul) 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+/Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 1 test)
+*** Failed! (after 1 test): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(3,0)
+Norte</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/26/t2/24/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Recta 0,Peca Recta 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+/Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 1 test)
+*** Failed! (after 1 test): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(3,0)
+Norte</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/26/t2/25/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Norte) (-3),Peca (Rampa Oeste) (-4),
+  Peca (Rampa Norte) (-3),Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Recta (-3),
+  Peca (Curva Norte) (-3),Peca (Curva Sul) (-3),
+  Peca (Curva Este) (-3),Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Oeste) (-3),Peca (Curva Sul) (-3),
+  Peca (Curva Oeste) (-3),Peca (Curva Sul) (-3),
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Rampa Oeste) (-1),
+  Peca (Rampa Oeste) (-2),Peca (Rampa Oeste) (-3),
+  Peca (Rampa Oeste) (-4),Peca (Curva Sul) (-4),
+  Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+/Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 1 test)
+*** Failed! (after 1 test): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(3,5)
+Oeste</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/26/t2/26/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Recta 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Norte) 1,Peca (Curva Este) 1,
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Oeste) 0,
+  Peca (Curva Este) 0,Peca Lava 0,Peca (Rampa Norte) 0,
+  Peca Recta 1,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca (Rampa Norte) (-1),
+  Peca (Curva Norte) 0,Peca (Curva Sul) 0,
+  Peca (Rampa Norte) 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca (Rampa Sul) (-1),
+  Peca Recta 0,Peca Lava 0,Peca (Rampa Sul) 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca (Curva Oeste) 0,
+  Peca (Curva Sul) 0,Peca Lava 0,Peca (Rampa Norte) 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Norte) 0,Peca (Curva Sul) 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Sul) 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+/Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 1 test)
+*** Failed! (after 1 test): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(6,3)
+Sul</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/26/t2/27/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Norte) 1,Peca (Rampa Este) 1,
+  Peca (Rampa Oeste) 1,Peca (Curva Este) 1,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Norte) 2,Peca (Rampa Oeste) 1,
+  Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0,
+  Peca Lava 0,Peca (Rampa Sul) 1,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Recta 2,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Oeste) 3,Peca (Rampa Oeste) 2,
+  Peca (Curva Sul) 2,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Rampa Norte) 1,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Rampa Norte) 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Norte) 0,Peca (Curva Sul) 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Recta 0,Peca Recta 0,
+  Peca (Curva Sul) 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+/Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 1 test)
+*** Failed! (after 1 test): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(11,4)
+Norte</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/26/t2/28/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca (Curva Norte) 0,Peca (Curva Este) 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Curva Norte) (-1),Peca (Rampa Norte) (-1),
+  Peca (Curva Sul) 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Rampa Oeste) (-1),
+  Peca (Rampa Oeste) (-2),Peca (Rampa Este) (-2),
+  Peca (Curva Sul) (-1),Peca (Rampa Sul) (-1),
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca (Curva Oeste) 0,
+  Peca (Rampa Oeste) (-1),Peca (Rampa Oeste) (-2),
+  Peca (Rampa Este) (-2),Peca Recta (-1),
+  Peca Recta (-1),Peca (Rampa Este) (-1),
+  Peca (Rampa Este) 0,Peca (Rampa Oeste) 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+/Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 1 test)
+*** Failed! (after 1 test): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(1,5)
+Este</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/26/t2/29/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca (Rampa Este) 0,
+  Peca (Rampa Oeste) 0,Peca Recta 0,
+  Peca (Curva Este) 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Recta 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca (Rampa Norte) 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Recta 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Recta 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca (Curva Norte) 1,
+  Peca (Rampa Oeste) 0,Peca Recta 0,Peca Recta 0,
+  Peca (Curva Este) 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca (Rampa Norte) 0,
+  Peca Lava 0,Peca Lava 0,Peca (Curva Oeste) 0,
+  Peca (Curva Sul) 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Norte) 0,Peca (Curva Sul) 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+/Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 1 test)
+*** Failed! (after 1 test): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(5,10)
+Este</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/26/t2/30/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca (Curva Norte) (-1),
+  Peca (Rampa Oeste) (-2),Peca (Curva Este) (-2),
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Norte) (-1),
+  Peca (Curva Sul) (-1),Peca Lava 0,
+  Peca (Rampa Sul) (-2),Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Rampa Sul) (-1),Peca Lava 0,
+  Peca Lava 0,Peca Recta (-1),Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Rampa Norte) (-1),Peca Lava 0,
+  Peca Lava 0,Peca (Rampa Sul) (-1),Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca (Curva Este) 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Rampa Sul) (-1),Peca Lava 0,
+  Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,
+  Peca (Curva Norte) 0,Peca Recta 0,Peca (Curva Sul) 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,
+  Peca Lava 0,Peca (Curva Oeste) 1,
+  Peca (Rampa Oeste) 0,Peca (Curva Sul) 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+/Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 1 test)
+*** Failed! (after 1 test): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(6,1)
+Norte</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/26/t2/31/run.html">[[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,
+  Peca (Rampa Este) 0,Peca (Rampa Este) 1,Peca Recta 2,
+  Peca Recta 2,Peca (Rampa Este) 2,Peca (Curva Este) 3,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0],
+ [Peca Lava 0,Peca Recta 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca (Rampa Norte) 2,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0],
+ [Peca Lava 0,Peca (Curva Sul) 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca (Curva Oeste) 2,Peca (Rampa Este) 2,
+  Peca (Curva Este) 3,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Recta 5,Peca (Rampa Oeste) 4,
+  Peca (Rampa Oeste) 3,Peca (Rampa Oeste) 2,
+  Peca (Rampa Este) 2,Peca (Curva Sul) 3,Peca Lava 0],
+ [Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,
+  Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]]</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+which RunT2
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Bool
+Output:
+
+Errors:
+/Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec) (after 1 test)
+*** Failed! (after 1 test): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src
+  which RunT2
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2 valida +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Bool
+  Output:
+  
+  Errors:
+  /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g026/src/RunT2: No such file or directory
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-1CZvhhXpfur5DrlRBFfeWr:HAAP.Test.Spec
+(0,0)
+Norte</td>
+            </tr>
+        
+    </tbody>
+</table>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+Output:
+[1 of 3] Compiling LI11718          ( LI11718.hs, LI11718.js_o )
+[2 of 3] Compiling Tarefa3_2017li1g10 ( Tarefa3_2017li1g10.hs, Tarefa3_2017li1g10.js_o )
+
+Errors:
+
+Tarefa3_2017li1g10.hs:26:19: error:
+    • Couldn't match expected type ‘Maybe Carro’
+                  with actual type ‘Ponto -&gt; Carro -&gt; Maybe Carro’
+    • Probable cause: ‘intersecoes’ is applied to too few arguments
+      In the expression: intersecoes (m (move t c m) c)
+      In an equation for ‘movimenta’:
+          movimenta m t c = intersecoes (m (move t c m) c)
+
+Tarefa3_2017li1g10.hs:26:32: error:
+    • Couldn't match expected type ‘Maybe Ponto -&gt; Carro -&gt; Tabuleiro’
+                  with actual type ‘[[Peca]]’
+    • The function ‘m’ is applied to two arguments,
+      but its type ‘[[Peca]]’ has none
+      In the first argument of ‘intersecoes’, namely ‘(m (move t c m) c)’
+      In the expression: intersecoes (m (move t c m) c)
+
+Exit Code: 1

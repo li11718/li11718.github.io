@@ -1,0 +1,28 @@
+Output:
+[1 of 4] Compiling LI11718          ( LI11718.hs, LI11718.js_o )
+[2 of 4] Compiling Tarefa2_2017li1g104 ( Tarefa2_2017li1g104.hs, Tarefa2_2017li1g104.js_o )
+[3 of 4] Compiling Tarefa3_2017li1g104 ( Tarefa3_2017li1g104.hs, Tarefa3_2017li1g104.js_o )
+[4 of 4] Compiling Main             ( CollisionSimulator.hs, CollisionSimulator.js_o )
+
+Errors:
+
+CollisionSimulator.hs:139:15: error:
+    • Couldn't match expected type ‘Maybe Carro’
+                  with actual type ‘Ponto -&gt; Maybe Carro’
+    • Probable cause: ‘T3.movimenta’ is applied to too few arguments
+      In a stmt of a 'do' block: carro' &lt;- T3.movimenta tab tempo carro
+      In the expression:
+        do { let carro = Carro (posicaoC e) (direcaoC e) (velocidadeC e);
+             carro' &lt;- T3.movimenta tab tempo carro;
+             return
+             $ e {posicaoC = posicao carro', direcaoC = direcao carro',
+                  velocidadeC = velocidade carro'} }
+      In an equation for ‘colideEstado’:
+          colideEstado (Mapa _ tab) tempo e
+            = do { let carro = ...;
+                   carro' &lt;- T3.movimenta tab tempo carro;
+                   return
+                   $ e {posicaoC = posicao carro', direcaoC = direcao carro',
+                        velocidadeC = velocidade carro'} }
+
+Exit Code: 1

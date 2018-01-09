@@ -1,0 +1,842 @@
+
+<!DOCTYPE html>
+<html>
+
+<head><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108230466-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108230466-1');
+</script>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Tarefa 4</title>
+</head>
+
+<body>
+
+<p><b>Nota: O visualizador aplica a mesma ação a todos os jogadores.</b><br>
+<b>Nota: O sistema de feedback testa a ação individualmente para cada jogador.</b><br>
+<b>Nota: O sistema de feedback considera apenas os primeiros 100 testes de cada grupo. </b><br>
+Output:
+[1 of 3] Compiling LI11718          ( LI11718.hs, LI11718.o )
+[2 of 3] Compiling Tarefa4_2017li1g87 ( Tarefa4_2017li1g87.hs, Tarefa4_2017li1g87.o )
+
+Errors:
+
+Tarefa4_2017li1g87.hs:10:1: error:
+    Graphics.Gloss: Can't be safely imported!
+    The module itself isn't safe.
+   |
+10 | import Graphics.Gloss
+   | ^^^^^^^^^^^^^^^^^^^^^
+
+Tarefa4_2017li1g87.hs:11:1: error:
+    Graphics.Gloss.Interface.Pure.Game: Can't be safely imported!
+    The module itself isn't safe.
+   |
+11 | import Graphics.Gloss.Interface.Pure.Game
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Exit Code: 1
+</p>
+    
+<div id="demo">
+
+<div id="tablediv" class="table-responsive-vertical shadow-z-1">
+<table id="table" class="table table-hover table-mc-light-blue">
+    <thead>
+        <tr>
+            
+                <th>(Tempo,Jogo,Acao)</th>
+            
+                <th>Jogador</th>
+            
+            <th>Resultado</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/1/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)}], nitros = [1.2], historico = [[(2,1)]]},
+ Acao {acelerar = False, travar = False, esquerda = False, direita = False, nitro = Nothing})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-success" data-title="Resultado">OK</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/2/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)}], nitros = [1.2], historico = [[(2,1)]]},
+ Acao {acelerar = True, travar = False, esquerda = True, direita = False, nitro = Nothing})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (1.794,0.858)}], nitros = [1.2], historico = [[(2,1)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.4671356533044224,0.9569417132966294)}], nitros = [1.2], historico = [[(2,1)]]}
+0</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/3/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 2.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)}], nitros = [1.2], historico = [[(2,1)]]},
+ Acao {acelerar = True, travar = False, esquerda = True, direita = False, nitro = Nothing})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 2.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.243357795716429,0.7787660966235108)}], nitros = [1.2], historico = [[(2,1)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 2.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.6373559008201797,6.176601167129981)}], nitros = [1.2], historico = [[(2,1)]]}
+0</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/4/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 2.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)}], nitros = [1.2], historico = [[(2,1)]]},
+ Acao {acelerar = True, travar = False, esquerda = True, direita = False, nitro = Nothing})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 2.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.083342294337314,1.1382025990867248)}], nitros = [1.2], historico = [[(2,1)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 2.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.314587508837376,1.319515841309732)}], nitros = [1.2], historico = [[(2,1)]]}
+0</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/5/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 2.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)}], nitros = [1.2], historico = [[(2,1)]]},
+ Acao {acelerar = True, travar = False, esquerda = True, direita = False, nitro = Nothing})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-success" data-title="Resultado">OK</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/6/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)}], nitros = [1.2], historico = [[(2,1)]]},
+ Acao {acelerar = True, travar = False, esquerda = True, direita = False, nitro = Nothing})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-success" data-title="Resultado">OK</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/7/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 110.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)}], nitros = [1.2], historico = [[(2,1)]]},
+ Acao {acelerar = True, travar = False, esquerda = True, direita = False, nitro = Nothing})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-success" data-title="Resultado">OK</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/8/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)}], nitros = [1.2], historico = [[]]},
+ Acao {acelerar = False, travar = False, esquerda = False, direita = False, nitro = Nothing})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-success" data-title="Resultado">OK</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/9/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)}], nitros = [1.2], historico = [[(2,1)]]},
+ Acao {acelerar = False, travar = False, esquerda = False, direita = False, nitro = Nothing})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)}], nitros = [1.2], historico = [[(3,1),(2,1)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)}], nitros = [1.2], historico = [[(3,2),(2,1)]]}
+0</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/10/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)}], nitros = [1.2], historico = [[(3,1),(2,1)]]},
+ Acao {acelerar = True, travar = False, esquerda = True, direita = False, nitro = Nothing})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (0.936,1.17)}], nitros = [1.2], historico = [[(3,1),(2,1)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (0.9808606762689392,1.5194411109428803)}], nitros = [1.2], historico = [[(3,2),(3,1),(2,1)]]}
+0</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/11/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)}], nitros = [1.2], historico = [[(2,1)]]},
+ Acao {acelerar = True, travar = False, esquerda = False, direita = False, nitro = Just 0})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.083342294337314,1.1382025990867248)}], nitros = [1.0899999999999999], historico = [[(2,1)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.4326137167034223,3.0955985573612006)}], nitros = [1.0899999999999999], historico = [[(2,1)]]}
+0</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/12/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)}], nitros = [0.0], historico = [[(2,1)]]},
+ Acao {acelerar = True, travar = False, esquerda = False, direita = False, nitro = Just 0})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)}], nitros = [0.0], historico = [[(2,1)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.4326137167034223,3.0955985573612006)}], nitros = [0.0], historico = [[(2,1)]]}
+0</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/13/run.html">(0.21,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)}], nitros = [0.1], historico = [[(2,1)]]},
+ Acao {acelerar = True, travar = False, esquerda = False, direita = False, nitro = Just 0})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.103038449397558,1.1347296355333862)}], nitros = [0.0], historico = [[(2,1)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.4326137167034223,3.0955985573612006)}], nitros = [0.0], historico = [[(2,1)]]}
+0</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/14/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)}], nitros = [1.2,0.0], historico = [[(2,1)],[(3,1),(2,1)]]},
+ Acao {acelerar = True, travar = False, esquerda = False, direita = False, nitro = Just 1})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.3555634918610404,1.6555634918610405)}], nitros = [1.0899999999999999,0.0], historico = [[(2,1)],[(3,1),(2,1)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (2.2506439776354594,-0.20180704906823688)}], nitros = [1.2,0.0], historico = [[(2,1)],[(3,1),(2,1)]]}
+0</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/15/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)}], nitros = [0.0,0.0], historico = [[(2,1)],[(3,1),(2,1)]]},
+ Acao {acelerar = True, travar = False, esquerda = False, direita = False, nitro = Just 1})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)}], nitros = [0.0,0.0], historico = [[(2,1)],[(3,1),(2,1)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (2.2506439776354594,-0.20180704906823688)}], nitros = [0.0,0.0], historico = [[(2,1)],[(3,2),(3,1),(2,1)]]}
+1</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/16/run.html">(0.21,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)}], nitros = [0.1,0.0], historico = [[(2,1)],[(3,1),(2,1)]]},
+ Acao {acelerar = True, travar = False, esquerda = False, direita = False, nitro = Just 1})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.3414213562373094,1.6414213562373094)}], nitros = [0.0,0.0], historico = [[(2,1)],[(3,1),(2,1)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (2.2506439776354594,-0.20180704906823688)}], nitros = [0.1,0.0], historico = [[(2,1)],[(3,1),(2,1)]]}
+0</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/17/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)}], nitros = [1.2], historico = [[(2,1)]]},
+ Acao {acelerar = False, travar = False, esquerda = False, direita = False, nitro = Nothing})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (1.7090366935746433,0.3761491449352662)}], nitros = [1.2], historico = [[(2,1)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)}], nitros = [1.2], historico = [[(2,1)]]}
+0</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/18/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)}], nitros = [1.2], historico = [[(2,1)]]},
+ Acao {acelerar = True, travar = True, esquerda = False, direita = True, nitro = Nothing})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 170.2, velocidade = (1.7090366935746433,0.3761491449352662)}], nitros = [1.2], historico = [[(2,1)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 170.2, velocidade = (3.307440811143538,8.28572689058486)}], nitros = [1.2], historico = [[(2,1)]]}
+0</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/19/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)}], nitros = [1.2], historico = [[(2,1)]]},
+ Acao {acelerar = False, travar = False, esquerda = True, direita = False, nitro = Nothing})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 209.8, velocidade = (1.7090366935746433,0.3761491449352662)}], nitros = [1.2], historico = [[(2,1)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 209.8, velocidade = (2.3,1.1)}], nitros = [1.2], historico = [[(2,1)]]}
+0</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/20/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)}], nitros = [1.2], historico = [[(2,1)]]},
+ Acao {acelerar = True, travar = False, esquerda = True, direita = False, nitro = Nothing})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 209.8, velocidade = (1.2757212822492718,0.45255434310871556)}], nitros = [1.2], historico = [[(2,1)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 209.8, velocidade = (3.002344522209446,9.010875146611067)}], nitros = [1.2], historico = [[(2,1)]]}
+0</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/21/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)}], nitros = [1.2], historico = [[(2,1)]]},
+ Acao {acelerar = False, travar = True, esquerda = False, direita = True, nitro = Nothing})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 170.2, velocidade = (2.1423521049000147,0.29974394676181704)}], nitros = [1.2], historico = [[(2,1)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 170.2, velocidade = (3.307440811143538,8.28572689058486)}], nitros = [1.2], historico = [[(2,1)]]}
+0</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/22/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)}], nitros = [1.2], historico = [[(2,1)]]},
+ Acao {acelerar = True, travar = False, esquerda = False, direita = False, nitro = Just 0})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (-0.3492115102208715,0.7390738362591509)}], nitros = [1.0899999999999999], historico = [[(2,1)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (3.9969473974851146,23.977864326820068)}], nitros = [1.0899999999999999], historico = [[(2,1)]]}
+0</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/23/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)}], nitros = [1.2], historico = [[]]},
+ Acao {acelerar = False, travar = False, esquerda = False, direita = False, nitro = Nothing})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (1.7090366935746433,0.3761491449352662)}], nitros = [1.2], historico = [[(2,1)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)}], nitros = [1.2], historico = [[(2,1)]]}
+0</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/24/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)}], nitros = [1.2], historico = [[(2,1)]]},
+ Acao {acelerar = True, travar = True, esquerda = False, direita = True, nitro = Nothing})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (3.3,1.6), direcao = -64.8, velocidade = (0.7655000000000001,1.1204999999999998)}], nitros = [1.2], historico = [[(3,1),(2,1)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (3.3,1.6), direcao = -64.8, velocidade = (-2.0333852383913578,5.730811203889315)}], nitros = [1.2], historico = [[(3,2),(2,1)]]}
+0</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/25/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)}], nitros = [1.2], historico = [[(3,1),(2,1)]]},
+ Acao {acelerar = False, travar = False, esquerda = True, direita = False, nitro = Nothing})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (3.3,1.6), direcao = -25.2, velocidade = (0.7655000000000001,1.1204999999999998)}], nitros = [1.2], historico = [[(3,1),(2,1)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (3.3,1.6), direcao = -25.2, velocidade = (1.2,1.5)}], nitros = [1.2], historico = [[(3,2),(3,1),(2,1)]]}
+0</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/26/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)}], nitros = [1.2], historico = [[(2,1)]]},
+ Acao {acelerar = True, travar = False, esquerda = True, direita = False, nitro = Nothing})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 209.8, velocidade = (1.2757212822492718,0.45255434310871556)}], nitros = [1.2], historico = [[(2,1)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 209.8, velocidade = (3.002344522209446,9.010875146611067)}], nitros = [1.2], historico = [[(2,1)]]}
+0</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/27/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)}], nitros = [0.0], historico = [[(2,1)]]},
+ Acao {acelerar = False, travar = True, esquerda = False, direita = True, nitro = Nothing})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 170.2, velocidade = (2.1423521049000147,0.29974394676181704)}], nitros = [0.0], historico = [[(2,1)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 170.2, velocidade = (3.307440811143538,8.28572689058486)}], nitros = [0.0], historico = [[(2,1)]]}
+0</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/28/run.html">(0.21,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)}], nitros = [0.1], historico = [[(2,1)]]},
+ Acao {acelerar = True, travar = False, esquerda = False, direita = False, nitro = Just 0})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (-1.1326528179515203,0.12443964879885278)}], nitros = [0.0], historico = [[(2,1)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (4.17541164382982,24.246931050380155)}], nitros = [0.0], historico = [[(2,1)]]}
+0</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/29/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)}], nitros = [1.2,0.0], historico = [[(2,1)],[(3,1),(2,1)]]},
+ Acao {acelerar = True, travar = False, esquerda = False, direita = False, nitro = Just 1})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (1.2757212822492718,0.45255434310871556)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (2.3667261889578035,2.6667261889578033)}], nitros = [1.0899999999999999,0.0], historico = [[(2,1)],[(3,1),(2,1)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (3.002344522209446,9.010875146611067)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (9.079829832265945,-11.263552868011777)}], nitros = [1.2,0.0], historico = [[(2,1)],[(3,1),(2,1)]]}
+0</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/30/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)}], nitros = [0.0,0.0], historico = [[(2,1)],[(3,1),(2,1)]]},
+ Acao {acelerar = True, travar = False, esquerda = False, direita = False, nitro = Just 1})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.076626983722081,1.4316269837220807)}], nitros = [0.0,0.0], historico = [[(2,1)],[(3,1),(2,1)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (6.515864916416511,-7.4460214368032345)}], nitros = [0.0,0.0], historico = [[(2,1)],[(3,2),(3,1),(2,1)]]}
+1</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/31/run.html">(0.21,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)}], nitros = [0.1,0.0], historico = [[(2,1)],[(3,1),(2,1)]]},
+ Acao {acelerar = True, travar = False, esquerda = False, direita = False, nitro = Just 1})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (0.3445588115667919,-0.13603261770154296)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (2.260660171779821,2.560660171779821)}], nitros = [0.0,0.0], historico = [[(2,1)],[(3,1),(2,1)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 3.0, k_acel = 4.0, k_peso = 2.0, k_nitro = 15.0, k_roda = 180.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (3.180808768554151,9.27994187017115)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (9.079829832265945,-11.263552868011777)}], nitros = [0.1,0.0], historico = [[(2,1)],[(3,1),(2,1)]]}
+0</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/32/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [1.2,0.0,1.0,2.0], historico = [[(2,1)],[(3,1)],[(4,3)],[(1,2)]]},
+ Acao {acelerar = False, travar = False, esquerda = False, direita = False, nitro = Nothing})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [1.2,0.0,1.0,2.0], historico = [[(2,1)],[(3,1)],[(4,3)],[(1,2)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [1.2,0.0,1.0,2.0], historico = [[(2,1)],[(3,1)],[(4,4),(4,3)],[(1,2)]]}
+2</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/33/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [1.2,0.0,1.0,2.0], historico = [[(2,1)],[(3,1)],[(4,3)],[(1,2)]]},
+ Acao {acelerar = True, travar = False, esquerda = True, direita = False, nitro = Nothing})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-1.7939999999999998,0.8580000000000001)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [1.2,0.0,1.0,2.0], historico = [[(2,1)],[(3,1)],[(4,3)],[(1,2)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3339287665734805,0.8826320198400827)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [1.2,0.0,1.0,2.0], historico = [[(2,1)],[(3,1)],[(4,4),(4,3)],[(1,2)]]}
+2</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/34/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 2.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [1.2,0.0,1.0,2.0], historico = [[(2,1)],[(3,1)],[(4,3)],[(1,2)]]},
+ Acao {acelerar = True, travar = False, esquerda = True, direita = False, nitro = Nothing})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 2.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.243357795716429,0.7787660966235108)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [1.2,0.0,1.0,2.0], historico = [[(2,1)],[(3,1)],[(4,3)],[(1,2)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 2.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.6373559008201797,6.176601167129981)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [1.2,0.0,1.0,2.0], historico = [[(2,1)],[(3,1)],[(4,3)],[(1,2)]]}
+0</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/35/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 2.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [1.2,0.0,1.0,2.0], historico = [[(2,1)],[(3,1)],[(4,3)],[(1,2)]]},
+ Acao {acelerar = True, travar = False, esquerda = True, direita = False, nitro = Nothing})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 2.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.5414132741310387,-0.33147022251382485)}], nitros = [1.2,0.0,1.0,2.0], historico = [[(2,1)],[(3,1)],[(4,3)],[(1,2)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 2.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.6122925262682648,-0.44227753218513566)}], nitros = [1.2,0.0,1.0,2.0], historico = [[(2,1)],[(3,1)],[(4,3)],[(1,3),(1,2)]]}
+3</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/36/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 2.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [1.2,0.0,1.0,2.0], historico = [[(2,1)],[(3,1)],[(4,3)],[(1,2)]]},
+ Acao {acelerar = True, travar = False, esquerda = True, direita = False, nitro = Nothing})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 2 tests): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 2.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.72)}], nitros = [1.2,0.0,1.0,2.0], historico = [[(2,1)],[(3,1)],[(4,3)],[(1,2)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 2.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [1.2,0.0,1.0,2.0], historico = [[(2,1)],[(3,1)],[(4,3)],[(1,3),(1,2)]]}
+3</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/37/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [1.2,0.0,1.0,2.0], historico = [[(2,1)],[(3,1)],[(4,3)],[(1,2)]]},
+ Acao {acelerar = True, travar = False, esquerda = True, direita = False, nitro = Nothing})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 3 tests): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [1.2,0.0,1.0,2.0], historico = [[(2,1)],[(3,1)],[(4,3)],[(1,2)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [1.2,0.0,1.0,2.0], historico = [[(2,1)],[(3,1)],[(4,4),(4,3)],[(1,2)]]}
+2</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/38/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 110.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [1.2,0.0,1.0,2.0], historico = [[(2,1)],[(3,1)],[(4,3)],[(1,2)]]},
+ Acao {acelerar = True, travar = False, esquerda = True, direita = False, nitro = Nothing})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 110.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -32.9, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [1.2,0.0,1.0,2.0], historico = [[(2,1)],[(3,1)],[(4,3)],[(1,2)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 110.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -32.9, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [1.2,0.0,1.0,2.0], historico = [[(2,1)],[(3,2),(3,1)],[(4,3)],[(1,2)]]}
+1</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/39/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [1.2,0.0,1.0,2.0], historico = [[],[],[],[]]},
+ Acao {acelerar = False, travar = False, esquerda = False, direita = False, nitro = Nothing})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason uncaught exception: ErrorCall (solution failed: 
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g087/src
+which RunT4
+echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g087/src/RunT4 atualiza +RTS -K100m -M100m -RTS'
+env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g087/src/RunT4 atualiza +RTS -K100m -M100m -RTS
+which env
+
+Exception: failed to parse result...
+&quot;&quot;
+...as type...
+Jogo
+Output:
+
+Errors:
+RunT4: Tarefa4_2017li1g87.hs:(150,1)-(152,59): Non-exhaustive patterns in function changehistoric
+
+
+Exit Code: 1
+CallStack (from HasCallStack):
+  error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-L3MODvsnl9xJBS0bF31uel:HAAP.IO
+CallStack (from HasCallStack):
+  error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-L3MODvsnl9xJBS0bF31uel:HAAP.Test.Spec) (after 1 test)
+*** Failed! (after 1 test): 
+Exception:
+  solution failed: 
+  Ran commands: 
+  cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g087/src
+  which RunT4
+  echo 'env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g087/src/RunT4 atualiza +RTS -K100m -M100m -RTS'
+  env timeout 10s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/svn/2017li1g087/src/RunT4 atualiza +RTS -K100m -M100m -RTS
+  which env
+  
+  Exception: failed to parse result...
+  &quot;&quot;
+  ...as type...
+  Jogo
+  Output:
+  
+  Errors:
+  RunT4: Tarefa4_2017li1g87.hs:(150,1)-(152,59): Non-exhaustive patterns in function changehistoric
+  
+  
+  Exit Code: 1
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/IO.hs:282:32 in HAAP-0.0.1-L3MODvsnl9xJBS0bF31uel:HAAP.IO
+  CallStack (from HasCallStack):
+    error, called at src/HAAP/Test/Spec.hs:231:47 in HAAP-0.0.1-L3MODvsnl9xJBS0bF31uel:HAAP.Test.Spec
+2</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/40/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [1.2,0.0,1.0,2.0], historico = [[(2,1)],[(2,1)],[(2,1)],[(2,1)]]},
+ Acao {acelerar = False, travar = False, esquerda = False, direita = False, nitro = Nothing})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [1.2,0.0,1.0,2.0], historico = [[(2,1)],[(2,1)],[(4,3),(2,1)],[(2,1)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [1.2,0.0,1.0,2.0], historico = [[(2,1)],[(2,1)],[(4,4),(2,1)],[(2,1)]]}
+2</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/41/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [1.2,0.0,1.0,2.0], historico = [[(2,1)],[(3,1)],[(4,3)],[(1,2)]]},
+ Acao {acelerar = True, travar = False, esquerda = True, direita = False, nitro = Nothing})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (0.936,1.17)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [1.2,0.0,1.0,2.0], historico = [[(2,1)],[(3,1)],[(4,3)],[(1,2)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 2.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 0.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (0.9808606762689392,1.5194411109428803)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [1.2,0.0,1.0,2.0], historico = [[(2,1)],[(3,2),(3,1)],[(4,3)],[(1,2)]]}
+1</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/42/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [1.2,0.0,1.0,2.0], historico = [[(2,1)],[(3,1)],[(4,3)],[(1,2)]]},
+ Acao {acelerar = True, travar = False, esquerda = False, direita = False, nitro = Just 0})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [1.2,0.0,1.0,2.0], historico = [[(2,1)],[(3,1)],[(4,3)],[(1,2)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.4326137167034223,3.0955985573612006)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [1.0899999999999999,0.0,1.0,2.0], historico = [[(2,1)],[(3,2),(3,1)],[(4,3)],[(1,2)]]}
+1</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/43/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [0.0,0.0,1.0,2.0], historico = [[(2,1)],[(3,1)],[(4,3)],[(1,2)]]},
+ Acao {acelerar = True, travar = False, esquerda = False, direita = False, nitro = Just 0})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [0.0,0.0,1.0,2.0], historico = [[(2,1)],[(3,1)],[(4,3)],[(1,2)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.4326137167034223,3.0955985573612006)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [0.0,0.0,1.0,2.0], historico = [[(2,1)],[(3,2),(3,1)],[(4,3)],[(1,2)]]}
+1</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/44/run.html">(0.21,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [0.1,0.0,1.0,2.0], historico = [[(2,1)],[(3,1)],[(4,3)],[(1,2)]]},
+ Acao {acelerar = True, travar = False, esquerda = False, direita = False, nitro = Just 0})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (1.8863807437348725,1.172932234620111)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [0.1,0.0,0.79,2.0], historico = [[(2,1)],[(3,1)],[(4,3)],[(1,2)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.4326137167034223,3.0955985573612006)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [0.0,0.0,1.0,2.0], historico = [[(2,1)],[(3,1)],[(4,4),(4,3)],[(1,2)]]}
+2</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/45/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [1.2,0.0,1.0,2.0], historico = [[(2,1)],[(3,1)],[(4,3)],[(1,2)]]},
+ Acao {acelerar = True, travar = False, esquerda = False, direita = False, nitro = Just 1})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.3555634918610404,1.6555634918610405)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [1.0899999999999999,0.0,1.0,2.0], historico = [[(2,1)],[(3,1)],[(4,3)],[(1,2)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (2.2506439776354594,-0.20180704906823688)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [1.2,0.0,1.0,2.0], historico = [[(2,1)],[(3,1)],[(4,3)],[(1,2)]]}
+0</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/46/run.html">(0.11,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [0.0,0.0,1.0,2.0], historico = [[(2,1)],[(3,1)],[(4,3)],[(1,2)]]},
+ Acao {acelerar = True, travar = False, esquerda = False, direita = False, nitro = Just 1})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [0.0,0.0,1.0,2.0], historico = [[(2,1)],[(3,1)],[(4,3)],[(1,2)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (2.2506439776354594,-0.20180704906823688)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [0.0,0.0,1.0,2.0], historico = [[(2,1)],[(3,1)],[(4,3)],[(1,2)]]}
+0</td>
+            </tr>
+        
+            <tr>
+                
+                <td class="datatext" data-title="arg"><a href="../../grupos/87/t4/47/run.html">(0.21,
+ Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.2,1.5)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [0.1,0.0,1.0,2.0], historico = [[(2,1)],[(3,1)],[(4,3)],[(1,2)]]},
+ Acao {acelerar = True, travar = False, esquerda = False, direita = False, nitro = Just 1})</a></td>
+                
+                <td class="datatext" data-title="arg">randomly sampled</td>
+                
+                <td class="hspec-failure" data-title="Resultado">reason Falsifiable (after 1 test): 
+Equality assertion failed: expected...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (1.4969848480983499,1.79698484809835)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [0.1,0.0,1.0,1.79], historico = [[(2,1)],[(3,1)],[(4,3)],[(1,2)]]}
+...but got...
+Jogo {mapa = Mapa ((2,1),Este) [[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0],[Peca Lava 0,Peca (Curva Norte) 0,Peca Recta 0,Peca (Rampa Este) 0,Peca (Curva Este) 1,Peca Lava 0],[Peca Lava 0,Peca (Rampa Sul) 0,Peca Lava 0,Peca Lava 0,Peca Recta 1,Peca Lava 0],[Peca Lava 0,Peca (Curva Oeste) 1,Peca Recta 1,Peca Recta 1,Peca (Curva Sul) 1,Peca Lava 0],[Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0,Peca Lava 0]], pista = Propriedades {k_atrito = 0.0, k_pneus = 0.0, k_acel = 0.0, k_peso = 0.0, k_nitro = 2.0, k_roda = 0.0}, carros = [Carro {posicao = (2.3,1.4), direcao = 190.0, velocidade = (2.3,1.1)},Carro {posicao = (3.3,1.6), direcao = -45.0, velocidade = (2.2506439776354594,-0.20180704906823688)},Carro {posicao = (4.1,3.5), direcao = 145.0, velocidade = (-2.3,1.1)},Carro {posicao = (1.3,2.6), direcao = -50.0, velocidade = (1.4,-0.5)}], nitros = [0.1,0.0,1.0,2.0], historico = [[(2,1)],[(3,1)],[(4,3)],[(1,3),(1,2)]]}
+3</td>
+            </tr>
+        
+    </tbody>
+</table>
+
+</div>
+
+</body>
+
+</html>

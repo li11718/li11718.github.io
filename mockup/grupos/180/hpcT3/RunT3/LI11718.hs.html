@@ -74,11 +74,11 @@ span.spaces    { background: white }
 <span class="lineno">   44 </span>
 <span class="lineno">   45 </span>-- | Uma peça num 'Tabuleiro'. A altura atribuída é sempre a do ponto mais /baixo/ da peça.
 <span class="lineno">   46 </span>data Peca = Peca Tipo Altura
-<span class="lineno">   47 </span>  deriving (<span class="decl"><span class="nottickedoff"><span class="decl"><span class="nottickedoff">Eq</span></span></span></span>,<span class="decl"><span class="nottickedoff"><span class="decl"><span class="nottickedoff"><span class="decl"><span class="nottickedoff">Read</span></span></span></span></span></span>,<span class="decl"><span class="nottickedoff"><span class="decl"><span class="nottickedoff">Show</span></span></span></span>) 
+<span class="lineno">   47 </span>  deriving (<span class="decl"><span class="nottickedoff"><span class="decl"><span class="nottickedoff">Eq</span></span></span></span>,<span class="decl"><span class="nottickedoff"><span class="decl"><span class="istickedoff"><span class="decl"><span class="istickedoff">Read</span></span></span></span></span></span>,<span class="decl"><span class="istickedoff"><span class="decl"><span class="istickedoff">Show</span></span></span></span>) 
 <span class="lineno">   48 </span>
 <span class="lineno">   49 </span>-- | Tipos de peças contidos num 'Tabuleiro'.
 <span class="lineno">   50 </span>data Tipo = Rampa Orientacao | Curva Orientacao | Recta | Lava
-<span class="lineno">   51 </span>  deriving (<span class="decl"><span class="nottickedoff"><span class="decl"><span class="nottickedoff">Eq</span></span></span></span>,<span class="decl"><span class="nottickedoff"><span class="decl"><span class="nottickedoff"><span class="decl"><span class="nottickedoff">Read</span></span></span></span></span></span>,<span class="decl"><span class="nottickedoff"><span class="decl"><span class="nottickedoff">Show</span></span></span></span>)
+<span class="lineno">   51 </span>  deriving (<span class="decl"><span class="istickedoff"><span class="decl"><span class="nottickedoff">Eq</span></span></span></span>,<span class="decl"><span class="nottickedoff"><span class="decl"><span class="istickedoff"><span class="decl"><span class="nottickedoff">Read</span></span></span></span></span></span>,<span class="decl"><span class="istickedoff"><span class="decl"><span class="nottickedoff">Show</span></span></span></span>)
 <span class="lineno">   52 </span>
 <span class="lineno">   53 </span>-- | Posições num 'Tabuleiro'.
 <span class="lineno">   54 </span>type Posicao  = (Int,Int)
@@ -89,7 +89,7 @@ span.spaces    { background: white }
 <span class="lineno">   59 </span>
 <span class="lineno">   60 </span>-- | Orientações no mapa.
 <span class="lineno">   61 </span>data Orientacao = Norte | Este | Sul | Oeste
-<span class="lineno">   62 </span>  deriving (<span class="decl"><span class="nottickedoff"><span class="decl"><span class="nottickedoff">Eq</span></span></span></span>,<span class="decl"><span class="nottickedoff"><span class="decl"><span class="nottickedoff"><span class="decl"><span class="nottickedoff">Read</span></span></span></span></span></span>,<span class="decl"><span class="nottickedoff"><span class="decl"><span class="nottickedoff">Show</span></span></span></span>,<span class="decl"><span class="nottickedoff"><span class="decl"><span class="nottickedoff"><span class="decl"><span class="nottickedoff"><span class="decl"><span class="nottickedoff"><span class="decl"><span class="nottickedoff"><span class="decl"><span class="nottickedoff">Enum</span></span></span></span></span></span></span></span></span></span></span></span>)
+<span class="lineno">   62 </span>  deriving (<span class="decl"><span class="istickedoff"><span class="decl"><span class="nottickedoff">Eq</span></span></span></span>,<span class="decl"><span class="nottickedoff"><span class="decl"><span class="istickedoff"><span class="decl"><span class="nottickedoff">Read</span></span></span></span></span></span>,<span class="decl"><span class="istickedoff"><span class="decl"><span class="nottickedoff">Show</span></span></span></span>,<span class="decl"><span class="nottickedoff"><span class="decl"><span class="nottickedoff"><span class="decl"><span class="istickedoff"><span class="decl"><span class="istickedoff"><span class="decl"><span class="nottickedoff"><span class="decl"><span class="nottickedoff">Enum</span></span></span></span></span></span></span></span></span></span></span></span>)
 <span class="lineno">   63 </span>-- | Ponto no mapa.
 <span class="lineno">   64 </span>type Ponto = (Double,Double)
 <span class="lineno">   65 </span>-- | Ângulo em graus.
@@ -104,11 +104,11 @@ span.spaces    { background: white }
 <span class="lineno">   74 </span>  A direção da velocidade (movimento) /não/ é necessariamente a mesma da direção do carro.
 <span class="lineno">   75 </span>-}
 <span class="lineno">   76 </span>data Carro = Carro
-<span class="lineno">   77 </span>    { <span class="nottickedoff"><span class="decl"><span class="nottickedoff">posicao</span></span></span>    :: Ponto      -- ^ a posição atual do carro
+<span class="lineno">   77 </span>    { <span class="istickedoff"><span class="decl"><span class="istickedoff">posicao</span></span></span>    :: Ponto      -- ^ a posição atual do carro
 <span class="lineno">   78 </span>    , <span class="nottickedoff"><span class="decl"><span class="nottickedoff">direcao</span></span></span>    :: Angulo     -- ^ a direção atual do carro
-<span class="lineno">   79 </span>    , <span class="nottickedoff"><span class="decl"><span class="nottickedoff">velocidade</span></span></span> :: Velocidade -- ^ a velocidade atual do carro
+<span class="lineno">   79 </span>    , <span class="istickedoff"><span class="decl"><span class="istickedoff">velocidade</span></span></span> :: Velocidade -- ^ a velocidade atual do carro
 <span class="lineno">   80 </span>    }
-<span class="lineno">   81 </span>  deriving (<span class="decl"><span class="nottickedoff"><span class="decl"><span class="nottickedoff">Eq</span></span></span></span>,<span class="decl"><span class="nottickedoff"><span class="decl"><span class="nottickedoff"><span class="decl"><span class="nottickedoff">Read</span></span></span></span></span></span>,<span class="decl"><span class="nottickedoff"><span class="decl"><span class="nottickedoff">Show</span></span></span></span>)
+<span class="lineno">   81 </span>  deriving (<span class="decl"><span class="nottickedoff"><span class="decl"><span class="nottickedoff">Eq</span></span></span></span>,<span class="decl"><span class="nottickedoff"><span class="decl"><span class="istickedoff"><span class="decl"><span class="nottickedoff">Read</span></span></span></span></span></span>,<span class="decl"><span class="istickedoff"><span class="decl"><span class="nottickedoff">Show</span></span></span></span>)
 <span class="lineno">   82 </span>
 <span class="lineno">   83 </span>{- | Direção inicial na construção de um caminho.
 <span class="lineno">   84 </span>
@@ -129,7 +129,7 @@ span.spaces    { background: white }
 <span class="lineno">   99 </span>prop&gt; altLava == 0
 <span class="lineno">  100 </span>-}
 <span class="lineno">  101 </span>altLava :: Altura
-<span class="lineno">  102 </span><span class="decl"><span class="nottickedoff">altLava = 0</span></span>
+<span class="lineno">  102 </span><span class="decl"><span class="istickedoff">altLava = 0</span></span>
 <span class="lineno">  103 </span>
 <span class="lineno">  104 </span>{- | Dado um caminho, calcula a dimensão do tabuleiro correspondente.
 <span class="lineno">  105 </span>

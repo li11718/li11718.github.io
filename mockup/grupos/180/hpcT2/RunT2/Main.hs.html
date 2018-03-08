@@ -39,12 +39,12 @@ span.spaces    { background: white }
 <span class="lineno">    9 </span><span class="decl"><span class="istickedoff">main = do</span>
 <span class="lineno">   10 </span><span class="spaces">    </span><span class="istickedoff">args &lt;- getArgs</span>
 <span class="lineno">   11 </span><span class="spaces">    </span><span class="istickedoff">case args of</span>
-<span class="lineno">   12 </span><span class="spaces">        </span><span class="istickedoff">[&quot;valida&quot;] -&gt; <span class="nottickedoff">do</span></span>
-<span class="lineno">   13 </span><span class="spaces">            </span><span class="istickedoff"><span class="nottickedoff">str &lt;- getContents</span></span>
-<span class="lineno">   14 </span><span class="spaces">            </span><span class="istickedoff"><span class="nottickedoff">let mapa = readMaybe str</span></span>
-<span class="lineno">   15 </span><span class="spaces">            </span><span class="istickedoff"><span class="nottickedoff">case mapa of</span></span>
-<span class="lineno">   16 </span><span class="spaces">                </span><span class="istickedoff"><span class="nottickedoff">Nothing -&gt; error &quot;mapa inválido&quot;</span></span>
-<span class="lineno">   17 </span><span class="spaces">                </span><span class="istickedoff"><span class="nottickedoff">Just m -&gt; print $ T2.valida m</span></span>
+<span class="lineno">   12 </span><span class="spaces">        </span><span class="istickedoff">[&quot;valida&quot;] -&gt; do</span>
+<span class="lineno">   13 </span><span class="spaces">            </span><span class="istickedoff">str &lt;- getContents</span>
+<span class="lineno">   14 </span><span class="spaces">            </span><span class="istickedoff">let mapa = readMaybe str</span>
+<span class="lineno">   15 </span><span class="spaces">            </span><span class="istickedoff">case mapa of</span>
+<span class="lineno">   16 </span><span class="spaces">                </span><span class="istickedoff">Nothing -&gt; <span class="nottickedoff">error &quot;mapa inválido&quot;</span></span>
+<span class="lineno">   17 </span><span class="spaces">                </span><span class="istickedoff">Just m -&gt; print $ T2.valida m</span>
 <span class="lineno">   18 </span><span class="spaces">        </span><span class="istickedoff">[&quot;testes&quot;] -&gt; print $ T2.testesT2</span>
 <span class="lineno">   19 </span><span class="spaces">        </span><span class="istickedoff">otherwise -&gt; <span class="nottickedoff">error &quot;RunT2 argumentos inválidos&quot;</span></span></span>
 

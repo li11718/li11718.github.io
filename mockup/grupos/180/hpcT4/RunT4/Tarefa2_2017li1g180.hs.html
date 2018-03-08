@@ -38,7 +38,7 @@ span.spaces    { background: white }
 <span class="lineno">    8 </span>import Tarefa1_2017li1g180
 <span class="lineno">    9 </span>
 <span class="lineno">   10 </span>testesT2 :: [Tabuleiro]
-<span class="lineno">   11 </span><span class="decl"><span class="nottickedoff">testesT2 = []</span></span>
+<span class="lineno">   11 </span><span class="decl"><span class="nottickedoff">testesT2 = tabs</span></span>
 <span class="lineno">   12 </span>
 <span class="lineno">   13 </span>validaPos :: Posicao -&gt; Tabuleiro -&gt; Bool
 <span class="lineno">   14 </span>-- hpacheco: mudei para incluir parede
@@ -122,48 +122,51 @@ span.spaces    { background: white }
 <span class="lineno">   92 </span><span class="spaces"></span><span class="nottickedoff">curva _ (Peca Lava _) = Nothing</span>
 <span class="lineno">   93 </span><span class="spaces"></span><span class="nottickedoff">curva o _ = Just o</span></span>
 <span class="lineno">   94 </span>
-<span class="lineno">   95 </span>-- mapa nao geravel por caminhos, lava extra a volta
-<span class="lineno">   96 </span><span class="decl"><span class="nottickedoff">m_ex1 = [[Peca Lava 2, Peca Lava 2, Peca Lava 2, Peca Lava 2]</span>
-<span class="lineno">   97 </span><span class="spaces">        </span><span class="nottickedoff">,[Peca Lava 2, Peca (Curva Norte) 2,Peca (Curva Este) 2, Peca Lava 2]</span>
-<span class="lineno">   98 </span><span class="spaces">        </span><span class="nottickedoff">,[Peca Lava 2, Peca (Curva Oeste) 2,Peca (Curva Sul) 2, Peca Lava 2]</span>
-<span class="lineno">   99 </span><span class="spaces">        </span><span class="nottickedoff">,[Peca Lava 2, Peca Lava 2, Peca Lava 2, Peca Lava 2]]</span></span>
-<span class="lineno">  100 </span>
-<span class="lineno">  101 </span>-- mapa nao geravel por caminhos, altura /= inicial sem possibilidade de rampas
-<span class="lineno">  102 </span><span class="decl"><span class="nottickedoff">m_ex2 = [[Peca (Curva Norte) 5,Peca (Curva Este) 5],[Peca (Curva Oeste) 5,Peca (Curva Sul) 5]]</span></span>
+<span class="lineno">   95 </span>
+<span class="lineno">   96 </span><span class="decl"><span class="nottickedoff">tabs = [mm_ex1,mm_ex2,mm_ex3,mm_exPI,mm_exLV,mm_exEX,mm_exLH,mm_why,mm_NSq,mm_Rec,mm_Rec']</span></span>
+<span class="lineno">   97 </span>
+<span class="lineno">   98 </span>-- mapa nao geravel por caminhos, lava extra a volta
+<span class="lineno">   99 </span><span class="decl"><span class="nottickedoff">mm_ex1 = [[Peca Lava 2, Peca Lava 2, Peca Lava 2, Peca Lava 2]</span>
+<span class="lineno">  100 </span><span class="spaces">        </span><span class="nottickedoff">,[Peca Lava 2, Peca (Curva Norte) 2,Peca (Curva Este) 2, Peca Lava 2]</span>
+<span class="lineno">  101 </span><span class="spaces">        </span><span class="nottickedoff">,[Peca Lava 2, Peca (Curva Oeste) 2,Peca (Curva Sul) 2, Peca Lava 2]</span>
+<span class="lineno">  102 </span><span class="spaces">        </span><span class="nottickedoff">,[Peca Lava 2, Peca Lava 2, Peca Lava 2, Peca Lava 2]]</span></span>
 <span class="lineno">  103 </span>
-<span class="lineno">  104 </span>-- mapa minimo sem vizinhos
-<span class="lineno">  105 </span><span class="decl"><span class="nottickedoff">m_ex3 = [[Peca (Curva Norte) 2,Peca Recta 2,Peca (Curva Este) 2],[Peca Recta 2,Peca Lava 2,Peca Recta 2],[Peca (Curva Oeste) 2,Peca Recta 2,Peca (Curva Sul) 2]]</span></span>
+<span class="lineno">  104 </span>-- mapa nao geravel por caminhos, altura /= inicial sem possibilidade de rampas
+<span class="lineno">  105 </span><span class="decl"><span class="nottickedoff">mm_ex2 = [[Peca (Curva Norte) 5,Peca (Curva Este) 5],[Peca (Curva Oeste) 5,Peca (Curva Sul) 5]]</span></span>
 <span class="lineno">  106 </span>
-<span class="lineno">  107 </span>
-<span class="lineno">  108 </span>-- posicao inicial invalida
-<span class="lineno">  109 </span><span class="decl"><span class="nottickedoff">m_exPI = [[Peca (Curva Norte) 2,Peca (Curva Este) 2],[Peca (Curva Oeste) 2,Peca (Curva Sul) 2]]</span></span>
+<span class="lineno">  107 </span>-- mapa minimo sem vizinhos
+<span class="lineno">  108 </span><span class="decl"><span class="nottickedoff">mm_ex3 = [[Peca (Curva Norte) 2,Peca Recta 2,Peca (Curva Este) 2],[Peca Recta 2,Peca Lava 2,Peca Recta 2],[Peca (Curva Oeste) 2,Peca Recta 2,Peca (Curva Sul) 2]]</span></span>
+<span class="lineno">  109 </span>
 <span class="lineno">  110 </span>
-<span class="lineno">  111 </span>-- mapa so lava
-<span class="lineno">  112 </span><span class="decl"><span class="nottickedoff">m_exLV = theFloorIsLava (5,10)</span></span>
+<span class="lineno">  111 </span>-- posicao inicial invalida
+<span class="lineno">  112 </span><span class="decl"><span class="nottickedoff">mm_exPI = [[Peca (Curva Norte) 2,Peca (Curva Este) 2],[Peca (Curva Oeste) 2,Peca (Curva Sul) 2]]</span></span>
 <span class="lineno">  113 </span>
-<span class="lineno">  114 </span>-- mapa com caminho extra
-<span class="lineno">  115 </span><span class="decl"><span class="nottickedoff">m_exEX = [[Peca (Curva Norte) 2,Peca Recta 2,Peca (Curva Este) 2],[Peca Recta 2,Peca Recta 2,Peca Recta 2],[Peca (Curva Oeste) 2,Peca Recta 2,Peca (Curva Sul) 2]]</span></span>
+<span class="lineno">  114 </span>-- mapa so lava
+<span class="lineno">  115 </span><span class="decl"><span class="nottickedoff">mm_exLV = theFloorIsLava (5,10)</span></span>
 <span class="lineno">  116 </span>
-<span class="lineno">  117 </span>-- altura da lava invalida
-<span class="lineno">  118 </span><span class="decl"><span class="nottickedoff">m_exLH = [[Peca (Curva Norte) 2,Peca Recta 2,Peca (Curva Este) 2],[Peca Recta 2,Peca Lava 2,Peca Recta 2],[Peca (Curva Oeste) 2,Peca Recta 2,Peca (Curva Sul) 2]]</span></span>
+<span class="lineno">  117 </span>-- mapa com caminho extra
+<span class="lineno">  118 </span><span class="decl"><span class="nottickedoff">mm_exEX = [[Peca (Curva Norte) 2,Peca Recta 2,Peca (Curva Este) 2],[Peca Recta 2,Peca Recta 2,Peca Recta 2],[Peca (Curva Oeste) 2,Peca Recta 2,Peca (Curva Sul) 2]]</span></span>
 <span class="lineno">  119 </span>
-<span class="lineno">  120 </span><span class="decl"><span class="nottickedoff">m_why = [[Peca (Curva Norte) 2,Peca Recta 2,Peca (Curva Este) 2],[Peca Recta 2,Peca Recta 2,Peca Recta 2],[Peca (Curva Oeste) 2,Peca Recta 2,Peca (Curva Sul) 2]]</span></span>
-<span class="lineno">  121 </span>
-<span class="lineno">  122 </span><span class="decl"><span class="nottickedoff">m_NSq = [[Peca Lava altLava, Peca Lava altLava, Peca Lava altLava, Peca Lava altLava, Peca Lava altLava]</span>
-<span class="lineno">  123 </span><span class="spaces">        </span><span class="nottickedoff">,[Peca Lava altLava, Peca (Curva Norte) 5,Peca (Curva Este) 5, Peca Lava altLava, Peca Lava altLava]</span>
-<span class="lineno">  124 </span><span class="spaces">        </span><span class="nottickedoff">,[Peca Lava altLava, Peca (Curva Oeste) 5,Peca (Curva Sul) 5, Peca Lava altLava]</span>
-<span class="lineno">  125 </span><span class="spaces">        </span><span class="nottickedoff">,[Peca Lava altLava, Peca Lava altLava, Peca Lava altLava, Peca Lava altLava]</span>
-<span class="lineno">  126 </span><span class="spaces">        </span><span class="nottickedoff">]</span></span>
-<span class="lineno">  127 </span>
-<span class="lineno">  128 </span><span class="decl"><span class="nottickedoff">m_Rec = [[Peca Lava altLava, Peca Lava altLava, Peca Lava altLava]</span>
-<span class="lineno">  129 </span><span class="spaces">        </span><span class="nottickedoff">,[Peca Lava altLava, Peca Recta 5,Peca Lava altLava]</span>
-<span class="lineno">  130 </span><span class="spaces">        </span><span class="nottickedoff">,[Peca Lava altLava, Peca Lava altLava, Peca Lava altLava]</span>
-<span class="lineno">  131 </span><span class="spaces">        </span><span class="nottickedoff">]</span></span>                          
-<span class="lineno">  132 </span>
-<span class="lineno">  133 </span><span class="decl"><span class="nottickedoff">m_Rec' = [[Peca Lava altLava, Peca Lava altLava, Peca Lava altLava]</span>
-<span class="lineno">  134 </span><span class="spaces">         </span><span class="nottickedoff">,[Peca Recta 5, Peca Recta 5,Peca Recta 5]</span>
-<span class="lineno">  135 </span><span class="spaces">         </span><span class="nottickedoff">,[Peca Lava altLava, Peca Lava altLava, Peca Lava altLava]</span>
-<span class="lineno">  136 </span><span class="spaces">         </span><span class="nottickedoff">]</span></span>
+<span class="lineno">  120 </span>-- altura da lava invalida
+<span class="lineno">  121 </span><span class="decl"><span class="nottickedoff">mm_exLH = [[Peca (Curva Norte) 2,Peca Recta 2,Peca (Curva Este) 2],[Peca Recta 2,Peca Lava 2,Peca Recta 2],[Peca (Curva Oeste) 2,Peca Recta 2,Peca (Curva Sul) 2]]</span></span>
+<span class="lineno">  122 </span>
+<span class="lineno">  123 </span><span class="decl"><span class="nottickedoff">mm_why = [[Peca (Curva Norte) 2,Peca Recta 2,Peca (Curva Este) 2],[Peca Recta 2,Peca Recta 2,Peca Recta 2],[Peca (Curva Oeste) 2,Peca Recta 2,Peca (Curva Sul) 2]]</span></span>
+<span class="lineno">  124 </span>
+<span class="lineno">  125 </span><span class="decl"><span class="nottickedoff">mm_NSq = [[Peca Lava altLava, Peca Lava altLava, Peca Lava altLava, Peca Lava altLava, Peca Lava altLava]</span>
+<span class="lineno">  126 </span><span class="spaces">        </span><span class="nottickedoff">,[Peca Lava altLava, Peca (Curva Norte) 5,Peca (Curva Este) 5, Peca Lava altLava, Peca Lava altLava]</span>
+<span class="lineno">  127 </span><span class="spaces">        </span><span class="nottickedoff">,[Peca Lava altLava, Peca (Curva Oeste) 5,Peca (Curva Sul) 5, Peca Lava altLava]</span>
+<span class="lineno">  128 </span><span class="spaces">        </span><span class="nottickedoff">,[Peca Lava altLava, Peca Lava altLava, Peca Lava altLava, Peca Lava altLava]</span>
+<span class="lineno">  129 </span><span class="spaces">        </span><span class="nottickedoff">]</span></span>
+<span class="lineno">  130 </span>
+<span class="lineno">  131 </span><span class="decl"><span class="nottickedoff">mm_Rec = [[Peca Lava altLava, Peca Lava altLava, Peca Lava altLava]</span>
+<span class="lineno">  132 </span><span class="spaces">        </span><span class="nottickedoff">,[Peca Lava altLava, Peca Recta 5,Peca Lava altLava]</span>
+<span class="lineno">  133 </span><span class="spaces">        </span><span class="nottickedoff">,[Peca Lava altLava, Peca Lava altLava, Peca Lava altLava]</span>
+<span class="lineno">  134 </span><span class="spaces">        </span><span class="nottickedoff">]</span></span>                          
+<span class="lineno">  135 </span>
+<span class="lineno">  136 </span><span class="decl"><span class="nottickedoff">mm_Rec' = [[Peca Lava altLava, Peca Lava altLava, Peca Lava altLava]</span>
+<span class="lineno">  137 </span><span class="spaces">         </span><span class="nottickedoff">,[Peca Recta 5, Peca Recta 5,Peca Recta 5]</span>
+<span class="lineno">  138 </span><span class="spaces">         </span><span class="nottickedoff">,[Peca Lava altLava, Peca Lava altLava, Peca Lava altLava]</span>
+<span class="lineno">  139 </span><span class="spaces">         </span><span class="nottickedoff">]</span></span>
 
 </pre>
 </body>

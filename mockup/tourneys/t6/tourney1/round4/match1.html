@@ -1,0 +1,23 @@
+Output:
+[ 8 of 16] Compiling SimulateT6       ( ../../../../../oracle/SimulateT6.hs, ../../../../../oracle/SimulateT6.o ) [OracleT2 changed]
+[16 of 16] Compiling Main             ( Simulate.hs, Simulate.o )
+Linking Simulate ...
+
+Errors:
+
+Exit Code: 0
+Ran commands: 
+cd /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/tmp/t6/tourney1/round4/match1
+which Simulate
+echo 'env timeout 240s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/tmp/t6/tourney1/round4/match1/Simulate +RTS -K800m -M800m -RTS'
+env timeout 240s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/tmp/t6/tourney1/round4/match1/Simulate +RTS -K800m -M800m -RTS
+which env
+
+Exception: error running: env timeout 240s /Users/hpacheco/Desktop/HAAP/HAAP-LI1_1718/tmp/t6/tourney1/round4/match1/Simulate +RTS -K800m -M800m -RTS
+exit status: 1
+stderr: Simulate: Safe.maximumNote [], glossTempo
+CallStack (from HasCallStack):
+  error, called at ./Safe/Util.hs:23:44 in safe-0.3.16-9YcgrXj17kg79mfNx7tCoF:Safe.Util
+  fromNoteModule, called at Safe.hs:65:12 in safe-0.3.16-9YcgrXj17kg79mfNx7tCoF:Safe
+  fromNote, called at Safe.hs:153:20 in safe-0.3.16-9YcgrXj17kg79mfNx7tCoF:Safe
+  maximumNote, called at ../../../../../oracle/SimulateT6.hs:194:33 in main:SimulateT6
